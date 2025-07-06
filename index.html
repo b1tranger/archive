@@ -1,502 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archive - Markdown Renderer</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.1/marked.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        html {
+            zoom: 110%;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #24292f;
-            background-color: #ffffff;
+        a {
+            -webkit-tap-highlight-color: transparent;
+
+            -webkit-touch-callout: none;
+
+            -webkit-user-select: none;
+
+            -khtml-user-select: none;
+
+            -moz-user-select: none;
+
+            -ms-user-select: none;
+
+            user-select: none;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .header {
-            border-bottom: 1px solid #d1d9e0;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-
-        .header h1 {
-            color: #0969da;
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .navigation {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .nav-input {
-            flex: 1;
-            min-width: 300px;
-            padding: 8px 12px;
-            border: 1px solid #d1d9e0;
-            border-radius: 6px;
-            font-size: 14px;
-        }
-
-        .nav-button {
-            background: #0969da;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: background 0.2s;
-        }
-
-        .nav-button:hover {
-            background: #0860ca;
-        }
-
-        .nav-button:disabled {
-            background: #8c959f;
-            cursor: not-allowed;
-        }
-
-        .breadcrumb {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 14px;
-            color: #656d76;
-            margin-bottom: 20px;
-        }
-
-        .breadcrumb a {
-            color: #0969da;
+        .a-1 {
             text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .loading {
+            border-style: dashed;
+            padding: 9px;
+            border-radius: 15px;
+            color: rgba(0, 0, 0, 0.637);
+            min-width: 70px;
+            min-height: 20px;
             text-align: center;
-            padding: 40px;
-            color: #656d76;
         }
 
-        .error {
-            background: #fff5f5;
-            border: 1px solid #fd6c6c;
-            border-radius: 6px;
-            padding: 16px;
-            margin: 20px 0;
-            color: #d1242f;
+        .a-1:hover {
+            transform: translateY(-3px);
+            text-align: center;
+            border-style: dashed;
+            /* border-width: 2px; */
+            border-radius: 15px;
+            border-color: #3F72AF;
+            background-color: #DBE2EF;
+            font-size: 18px;
         }
 
-        .markdown-content {
-            background: white;
-            border-radius: 6px;
-            line-height: 1.6;
-        }
-
-        .markdown-content h1,
-        .markdown-content h2,
-        .markdown-content h3,
-        .markdown-content h4,
-        .markdown-content h5,
-        .markdown-content h6 {
-            margin-top: 24px;
-            margin-bottom: 16px;
-            font-weight: 600;
-            line-height: 1.25;
-        }
-
-        .markdown-content h1 {
-            font-size: 2em;
-            border-bottom: 1px solid #d1d9e0;
-            padding-bottom: 8px;
-        }
-
-        .markdown-content h2 {
-            font-size: 1.5em;
-            border-bottom: 1px solid #d1d9e0;
-            padding-bottom: 8px;
-        }
-
-        .markdown-content h3 {
-            font-size: 1.25em;
-        }
-
-        .markdown-content p {
-            margin-bottom: 16px;
-        }
-
-        .markdown-content ul,
-        .markdown-content ol {
-            padding-left: 32px;
-            margin-bottom: 16px;
-        }
-
-        .markdown-content li {
-            margin-bottom: 4px;
-        }
-
-        .markdown-content blockquote {
-            border-left: 4px solid #d1d9e0;
-            padding-left: 16px;
-            margin: 16px 0;
-            color: #656d76;
-        }
-
-        .markdown-content pre {
-            background: #f6f8fa;
-            border-radius: 6px;
-            padding: 16px;
-            overflow-x: auto;
-            margin: 16px 0;
-        }
-
-        .markdown-content code {
-            background: #f6f8fa;
-            border-radius: 3px;
-            padding: 2px 4px;
-            font-size: 85%;
-            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-        }
-
-        .markdown-content pre code {
-            background: transparent;
-            padding: 0;
-        }
-
-        .markdown-content table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 16px 0;
-        }
-
-        .markdown-content th,
-        .markdown-content td {
-            border: 1px solid #d1d9e0;
-            padding: 8px 12px;
-            text-align: left;
-        }
-
-        .markdown-content th {
-            background: #f6f8fa;
-            font-weight: 600;
-        }
-
-        .markdown-content a {
-            color: #0969da;
+        .a-2 {
             text-decoration: none;
+            /* border-style: dashed; */
+            /* padding: 15%; */
+            /* border-radius: 15px; */
+            color: rgba(0, 0, 0, 0.637);
         }
 
-        .markdown-content a:hover {
-            text-decoration: underline;
+        .a-2:hover {
+            /* background-color: red; */
+            color: #3F72AF;
+            font-size: 18px;
         }
 
-        .markdown-content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-            margin: 16px 0;
+        .a-3 {
+            font-size: small;
+            text-decoration: none;
+            /* border-style: dashed; */
+            /* padding: 15%; */
+            /* border-radius: 15px; */
+            color: rgba(0, 0, 0, 0.637);
         }
 
-        .file-explorer {
-            background: #f6f8fa;
-            border: 1px solid #d1d9e0;
-            border-radius: 6px;
-            padding: 16px;
-            margin-bottom: 20px;
+        .a-3:hover {
+            /* background-color: red; */
+            color: #3F72AF;
+            font-size: 18px;
         }
 
-        .file-explorer h3 {
-            margin-bottom: 12px;
-            color: #24292f;
+
+        a {
+            text-decoration: none;
+            /* border-style: dashed;
+    padding: 1%;
+    border-radius: 15px; */
+            color: rgba(0, 0, 0, 0.637);
         }
 
-        .file-list {
+        table {
+            justify-content: center;
             display: flex;
-            flex-direction: column;
-            gap: 8px;
+            border-radius: 15px;
+            border-spacing: 5px;
+            /* border-style: solid; */
         }
 
-        .file-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 12px;
-            background: white;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.2s;
+        td,
+        th {
+            padding: 5px;
+            text-align: center;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 10px;
+            padding: 8px;
+            /* background-color: ; */
+            height: 30px;
+            max-width: 400px;
         }
 
-        .file-item:hover {
-            background: #f3f4f6;
-        }
-
-        .file-icon {
-            width: 16px;
-            height: 16px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .navigation {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .nav-input {
-                min-width: auto;
-            }
-        }
+        /* td:hover {
+            transform: translateY(-3px);
+            text-align: center;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 10px;
+            border-color: #3F72AF;
+            background-color: #DBE2EF;
+        } */
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>📚 Archive Reader</h1>
-            <div class="navigation">
-                <input type="text" class="nav-input" id="pathInput" placeholder="Enter path: .md/Book_Reviews/Facebook/1. A PhD is Not Enough/README.md">
-                <button class="nav-button" id="loadButton">Load</button>
-                <button class="nav-button" id="homeButton">Home</button>
-            </div>
-            <div class="breadcrumb" id="breadcrumb"></div>
-        </div>
 
-        <div id="loading" class="loading" style="display: none;">
-            <p>Loading markdown content...</p>
-        </div>
+<body style="margin: auto;width: 90%;background-color: #F9F7F7;max-width: 800px;font-size: medium;">
 
-        <div id="error" class="error" style="display: none;"></div>
+    <!-- HOME BUTTON -->
 
-        <div id="fileExplorer" class="file-explorer" style="display: none;">
-            <h3>📁 Directory Contents</h3>
-            <div class="file-list" id="fileList"></div>
-        </div>
+    <a href="../index.html" class="home-button">
+        <svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+    </a>
 
-        <div id="content" class="markdown-content"></div>
-    </div>
+    <!-- BACK BUTTON -->
 
-    <script>
-        class MarkdownRenderer {
-            constructor() {
-                this.baseUrl = 'https://raw.githubusercontent.com/b1tranger/archive/main/';
-                this.currentPath = '';
-                this.init();
-            }
+    <a href="javascript:history.back()" class="back-icon">&#8592;</a>
 
-            init() {
-                // Configure marked
-                marked.setOptions({
-                    highlight: function(code, lang) {
-                        if (lang && hljs.getLanguage(lang)) {
-                            return hljs.highlight(code, { language: lang }).value;
-                        }
-                        return hljs.highlightAuto(code).value;
-                    },
-                    breaks: true,
-                    gfm: true
-                });
+    <!-- -------------------------------------------------------------------- -->
 
-                // Bind events
-                document.getElementById('loadButton').addEventListener('click', () => this.loadFromInput());
-                document.getElementById('homeButton').addEventListener('click', () => this.goHome());
-                document.getElementById('pathInput').addEventListener('keypress', (e) => {
-                    if (e.key === 'Enter') this.loadFromInput();
-                });
+    <!-- <h2 id=""># </h2>
+    <ul>
+         <li style="padding:5px;"><a class="a-2" href=""
+                target="_blank"></a></li>
+    <li><a href=""></a></li>
+    </ul> -->
 
-                // Load from URL hash or default
-                this.loadFromHash();
-            }
+    <p style="font-size: 30px;text-align: center;">Welcome to my Archive</p>
+    <hr style="border-width: 4px;border-radius: 5px;border-color: rgba(0, 0, 0, 0.433);">
 
-            loadFromHash() {
-                const hash = window.location.hash.substring(1);
-                if (hash) {
-                    this.loadMarkdown(hash);
-                } else {
-                    this.goHome();
-                }
-            }
+    <h2 id="Portal"># Portal</h2>
 
-            loadFromInput() {
-                const path = document.getElementById('pathInput').value.trim();
-                if (path) {
-                    this.loadMarkdown(path);
-                }
-            }
+    <ul style="margin-bottom: 30px;margin-top: -15px;">
+        <li style="padding:5px;"><a class="a-2" href="https://b1tranger.github.io/" target="_blank">my Portfolio</a>
+        </li>
+        <li style="padding:5px;"><a class="a-2" href="https://b1tranger.gitbook.io/archive" target="_blank">b1tranger's
+                gitbook</a></li>
+        <li style="padding:5px;"><a class="a-2"
+                href="https://docs.google.com/document/d/1EOJuTOzXslIHeFXmMDrNIV7vHBxxjHr5/edit?usp=sharing&ouid=107122346321668658639&rtpof=true&sd=true"
+                target="_blank">Resources Dump</a></li>
 
-            async loadMarkdown(path) {
-                this.showLoading();
-                this.currentPath = path;
-                
-                // Update URL hash
-                window.location.hash = path;
-                
-                // Update input
-                document.getElementById('pathInput').value = path;
-                
-                try {
-                    const url = this.baseUrl + path;
-                    const response = await fetch(url);
-                    
-                    if (!response.ok) {
-                        throw new Error(`Failed to load: ${response.status} ${response.statusText}`);
-                    }
-                    
-                    const content = await response.text();
-                    this.renderMarkdown(content);
-                    this.updateBreadcrumb(path);
-                    this.hideError();
-                    
-                } catch (error) {
-                    this.showError(`Error loading markdown: ${error.message}`);
-                    console.error('Error:', error);
-                }
-                
-                this.hideLoading();
-            }
+        <!-- <li style="padding:5px;"><a class="a-2" href=""></a></li> -->
+        <!-- <li style="padding:5px;"><a class="a-2" href=""></a></li> -->
+        <!-- <li style="padding:5px;"><a class="a-2" href=""></a></li>
+    <li><a href=""></a></li> -->
+    </ul>
 
-            renderMarkdown(content) {
-                const html = marked.parse(content);
-                document.getElementById('content').innerHTML = html;
-                document.getElementById('fileExplorer').style.display = 'none';
-                
-                // Process relative links
-                this.processLinks();
-            }
+    <hr style="border-width: 4px;border-radius: 5px;border-color: rgba(0, 0, 0, 0.433);">
 
-            processLinks() {
-                const links = document.querySelectorAll('#content a');
-                links.forEach(link => {
-                    const href = link.getAttribute('href');
-                    if (href && !href.startsWith('http') && !href.startsWith('#')) {
-                        link.addEventListener('click', (e) => {
-                            e.preventDefault();
-                            const newPath = this.resolvePath(this.currentPath, href);
-                            this.loadMarkdown(newPath);
-                        });
-                    }
-                });
-            }
+    <h2 id="Index"># Index &nbsp;<span style="font-size: x-small;margin-top: -50px;color: #000000a9;">(headings are
+            clickable)</span></h2>
 
-            resolvePath(currentPath, relativePath) {
-                const currentDir = currentPath.substring(0, currentPath.lastIndexOf('/'));
-                if (relativePath.startsWith('./')) {
-                    return currentDir + '/' + relativePath.substring(2);
-                } else if (relativePath.startsWith('../')) {
-                    const upLevels = (relativePath.match(/\.\.\//g) || []).length;
-                    let targetDir = currentDir;
-                    for (let i = 0; i < upLevels; i++) {
-                        targetDir = targetDir.substring(0, targetDir.lastIndexOf('/'));
-                    }
-                    return targetDir + '/' + relativePath.replace(/\.\.\//g, '');
-                } else {
-                    return currentDir + '/' + relativePath;
-                }
-            }
+    <ul style="margin-bottom: 30px;margin-top: -15px;">
+        <li style="padding:5px;"><a class="a-2" href="#Bangla-Tutorials">Bangla Tutorials</a></li>
+        <li style="padding:5px;"><a class="a-2" href="#English-Tutorials">English Tutorials</a></li>
+        <li style="padding:5px;"><a class="a-2" href="#Bangla-Resources">Bangla Resources</a></li>
+        <li style="padding:5px;"><a class="a-2" href="#Guides">Guides</a></li>
+        <li style="padding:5px;"><a class="a-2" href="#.md">.md pages</a> / <a class="a-2" href="md_render.html">renderer</a></li>
+        <!-- <li style="padding:5px;"><a class="a-2" href=""></a></li>
+    <li><a href=""></a></li> -->
+    </ul>
 
-            updateBreadcrumb(path) {
-                const breadcrumb = document.getElementById('breadcrumb');
-                const parts = path.split('/').filter(part => part);
-                
-                let html = '<a href="#" onclick="renderer.goHome()">🏠 Home</a>';
-                let currentPath = '';
-                
-                parts.forEach((part, index) => {
-                    currentPath += (index > 0 ? '/' : '') + part;
-                    html += ' / ';
-                    if (index === parts.length - 1) {
-                        html += `<span>${part}</span>`;
-                    } else {
-                        html += `<a href="#" onclick="renderer.loadMarkdown('${currentPath}/README.md')">${part}</a>`;
-                    }
-                });
-                
-                breadcrumb.innerHTML = html;
-            }
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr style="border-width: 4px;border-radius: 5px;border-color: rgba(0, 0, 0, 0.433);">
 
-            goHome() {
-                window.location.hash = '';
-                this.currentPath = '';
-                document.getElementById('pathInput').value = '';
-                this.showHome();
-            }
+    <h2 id="Bangla-Tutorials"><a href="#Index"># Bangla Tutorials</a></h2>
+    <ul>
+        <li style="padding:5px;"><a class="a-2" href="https://www.youtube.com/@CPSAcademy" target="_blank">CPS
+                Academy</a><br><small style="font-size: x-small;">Suggested: Arnob Bokshi [50-010], An Nazmus Sakib
+                [52-058] </small></li>
 
-            showHome() {
-                document.getElementById('content').innerHTML = '';
-                document.getElementById('breadcrumb').innerHTML = '<span>🏠 Home</span>';
-                
-                const explorer = document.getElementById('fileExplorer');
-                const fileList = document.getElementById('fileList');
-                
-                // Show common directories
-                const commonPaths = [
-                    { name: '📖 Book Reviews', path: '.md/Book_Reviews' },
-                    { name: '📊 Facebook PhD Guide', path: '.md/Book_Reviews/Facebook/1. A PhD is Not Enough/README.md' },
-                    { name: '📝 Other Documents', path: '.md' }
-                ];
-                
-                fileList.innerHTML = commonPaths.map(item => `
-                    <div class="file-item" onclick="renderer.loadMarkdown('${item.path}/README.md')">
-                        <span class="file-icon">${item.name.charAt(0)}</span>
-                        <span>${item.name}</span>
-                    </div>
-                `).join('');
-                
-                explorer.style.display = 'block';
-            }
+        <!-- <li style="padding:5px;"><a class="a-2" href=""
+                target="_blank"></a></li>
+    <li><a href=""></a></li> -->
+    </ul>
 
-            showLoading() {
-                document.getElementById('loading').style.display = 'block';
-                document.getElementById('loadButton').disabled = true;
-            }
+    <h2 id="English-Tutorials"><a href="#Index"># English Tutorials</a></h2>
+    <ul>
+        <li style="padding:5px;"><a class="a-2" href="https://www.youtube.com/@BroCodez" target="_blank">Bro Code</a>
+        </li>
+        <li style="padding:5px;"><a class="a-2" href="https://www.youtube.com/@freecodecamp"
+                target="_blank">freeCodeCamp.org</a></li>
+        <li style="padding:5px;"><a class="a-2" href="https://www.youtube.com/@JennyslecturesCSIT"
+                target="_blank">Jenny's Lectures CS IT</a></li>
+    </ul>
 
-            hideLoading() {
-                document.getElementById('loading').style.display = 'none';
-                document.getElementById('loadButton').disabled = false;
-            }
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr style="border-width: 4px;border-radius: 5px;border-color: rgba(0, 0, 0, 0.433);">
 
-            showError(message) {
-                const errorDiv = document.getElementById('error');
-                errorDiv.textContent = message;
-                errorDiv.style.display = 'block';
-            }
+    <h2 id="Bangla-Resources"><a href="#Index"># Bangla Resources </a></h2>
+    <ul>
+        <li style="padding:5px;"><a class="a-2" href="https://phitron.gitbook.io/data-structure"
+                target="_blank">data-structure</a></li>
+        <!-- <li><a href=""></a></li> -->
+    </ul>
 
-            hideError() {
-                document.getElementById('error').style.display = 'none';
-            }
-        }
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        // Initialize the renderer
-        const renderer = new MarkdownRenderer();
 
-        // Handle browser back/forward
-        window.addEventListener('hashchange', () => {
-            renderer.loadFromHash();
-        });
-    </script>
+    <h2 id="Guides"><a href="#Index"># Guides </a></h2>
+    <ul>
+        <li style="padding:5px;">Google Drive Sync <br><a class="a-3"
+                href="https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe" target="_blank">
+                [ for Windows ]</a>&nbsp;&nbsp;&nbsp;<a class="a-3"
+                href="https://play.google.com/store/apps/details?id=com.ttxapps.drivesync&hl=en" target="_blank">
+                [ for Android ]</a>
+            <ul style="font-size: x-small;">
+                <li>add folder shortcut to your own drive</li>
+                <li>install drive for desktop</li>
+                <li>or, on mobile, set up autosync for google drive <br><a class="a-2" href="2. DriveSync guide.pdf"
+                        download>[ Guide ? ]</a></li>
+                <li>use the drive contents as if they're your own</li>
+            </ul>
+
+        </li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <!-- <li><a href=""></a></li> -->
+    </ul>
+
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr style="border-width: 4px;border-radius: 5px;border-color: rgba(0, 0, 0, 0.433);">
+
+    <h2 id=".md"><a href="#Index"># .md pages </a></h2>
+    <p>(append paths to sire URL)</p>
+    <ul>
+        <li style="padding:5px;">Book Reviews
+            <ul>
+                <li>.md/Book_Reviews/Facebook/1. A PhD is Not Enough/index.html</li>
+            </ul>
+        </li>
+        <!-- <li><a href=""></a></li> -->
+    </ul>
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr style="border-width: 4px;border-radius: 5px;border-color: rgba(0, 0, 0, 0.433);">
+
+
+
 </body>
+
 </html>

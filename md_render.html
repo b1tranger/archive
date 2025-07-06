@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive - Markdown Renderer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.1/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #24292f;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            border-bottom: 1px solid #d1d9e0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #0969da;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-input {
+            flex: 1;
+            min-width: 300px;
+            padding: 8px 12px;
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .nav-button {
+            background: #0969da;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .nav-button:hover {
+            background: #0860ca;
+        }
+
+        .nav-button:disabled {
+            background: #8c959f;
+            cursor: not-allowed;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            color: #656d76;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb a {
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #656d76;
+        }
+
+        .error {
+            background: #fff5f5;
+            border: 1px solid #fd6c6c;
+            border-radius: 6px;
+            padding: 16px;
+            margin: 20px 0;
+            color: #d1242f;
+        }
+
+        .markdown-content {
+            background: white;
+            border-radius: 6px;
+            line-height: 1.6;
+        }
+
+        .markdown-content h1,
+        .markdown-content h2,
+        .markdown-content h3,
+        .markdown-content h4,
+        .markdown-content h5,
+        .markdown-content h6 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        .markdown-content h1 {
+            font-size: 2em;
+            border-bottom: 1px solid #d1d9e0;
+            padding-bottom: 8px;
+        }
+
+        .markdown-content h2 {
+            font-size: 1.5em;
+            border-bottom: 1px solid #d1d9e0;
+            padding-bottom: 8px;
+        }
+
+        .markdown-content h3 {
+            font-size: 1.25em;
+        }
+
+        .markdown-content p {
+            margin-bottom: 16px;
+        }
+
+        .markdown-content ul,
+        .markdown-content ol {
+            padding-left: 32px;
+            margin-bottom: 16px;
+        }
+
+        .markdown-content li {
+            margin-bottom: 4px;
+        }
+
+        .markdown-content blockquote {
+            border-left: 4px solid #d1d9e0;
+            padding-left: 16px;
+            margin: 16px 0;
+            color: #656d76;
+        }
+
+        .markdown-content pre {
+            background: #f6f8fa;
+            border-radius: 6px;
+            padding: 16px;
+            overflow-x: auto;
+            margin: 16px 0;
+        }
+
+        .markdown-content code {
+            background: #f6f8fa;
+            border-radius: 3px;
+            padding: 2px 4px;
+            font-size: 85%;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+        }
+
+        .markdown-content pre code {
+            background: transparent;
+            padding: 0;
+        }
+
+        .markdown-content table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 16px 0;
+        }
+
+        .markdown-content th,
+        .markdown-content td {
+            border: 1px solid #d1d9e0;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        .markdown-content th {
+            background: #f6f8fa;
+            font-weight: 600;
+        }
+
+        .markdown-content a {
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        .markdown-content a:hover {
+            text-decoration: underline;
+        }
+
+        .markdown-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 16px 0;
+        }
+
+        .file-explorer {
+            background: #f6f8fa;
+            border: 1px solid #d1d9e0;
+            border-radius: 6px;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+
+        .file-explorer h3 {
+            margin-bottom: 12px;
+            color: #24292f;
+        }
+
+        .file-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .file-item:hover {
+            background: #f3f4f6;
+        }
+
+        .file-icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .path-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .dropdown-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .dropdown-category {
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .dropdown-header {
+            display: flex;
+            align-items: center;
+            padding: 14px 16px;
+            background: #f8f9fa;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid #e1e4e8;
+            user-select: none;
+        }
+
+        .dropdown-header:hover {
+            background: #e9ecef;
+        }
+
+        .dropdown-icon {
+            font-size: 18px;
+            margin-right: 12px;
+            min-width: 24px;
+        }
+
+        .dropdown-title {
+            flex: 1;
+            font-weight: 600;
+            color: #24292f;
+            font-size: 15px;
+        }
+
+        .dropdown-arrow {
+            font-size: 12px;
+            color: #656d76;
+            transition: transform 0.2s ease;
+            font-family: monospace;
+        }
+
+        .dropdown-arrow.rotated {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: #fafbfc;
+        }
+
+        .dropdown-content.open {
+            max-height: 500px;
+            padding: 8px 0;
+        }
+
+        .dropdown-content .path-item {
+            margin: 4px 12px;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background: white;
+            border: 1px solid #e1e4e8;
+        }
+
+        .dropdown-content .path-item:hover {
+            background: #f6f8fa;
+            border-color: #0969da;
+            transform: translateX(4px);
+        }
+
+        .path-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            background: white;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .path-item:hover {
+            background: #f6f8fa;
+            border-color: #0969da;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .path-item code {
+            flex: 1;
+            background: transparent;
+            color: #0969da;
+            font-weight: 500;
+            font-size: 13px;
+            padding: 0;
+        }
+
+        .path-icon {
+            font-size: 16px;
+            min-width: 20px;
+        }
+
+        .copy-indicator {
+            opacity: 0.6;
+            font-size: 14px;
+            transition: opacity 0.2s;
+        }
+
+        .path-item:hover .copy-indicator {
+            opacity: 1;
+        }
+
+        .copied-notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            z-index: 1000;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .navigation {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .nav-input {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Archive Reader</h1>
+            <div class="navigation">
+                <input type="text" class="nav-input" id="pathInput" placeholder="Select a path from the available .md list">
+                <button class="nav-button" id="loadButton">Load</button>
+                <button class="nav-button" id="homeButton">Home</button>
+            </div>
+            <div class="breadcrumb" id="breadcrumb"></div>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <p>Loading markdown content...</p>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="fileExplorer" class="file-explorer" style="display: none;">
+            <h3>📁 Quick Navigation</h3>
+            <div class="file-list" id="fileList"></div>
+        </div>
+
+        <!-- Custom HTML Section - Add your manual content here -->
+        <div id="pathsSection" class="file-explorer">
+            <h3>📋 Available Markdown Files</h3>
+            <p style="margin-bottom: 16px; color: #656d76;">Click any category to expand, then click a path to copy it to the input field above:</p>
+            
+            <div class="dropdown-container">
+                
+                <!-- Book Reviews Category -->
+                <div class="dropdown-category">
+                    <div class="dropdown-header" onclick="toggleDropdown('bookReviews')">
+                        <span class="dropdown-icon">📖</span>
+                        <span class="dropdown-title">Book Reviews</span>
+                        <span class="dropdown-arrow" id="bookReviews-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="bookReviews">
+                        <div class="path-item" onclick="copyToClipboard('.md/Book_Reviews/Facebook/1. A PhD is Not Enough/README.md')">
+                            <span class="path-icon">📚</span>
+                            <code>.md/Book_Reviews/Facebook/1. A PhD is Not Enough/README.md</code>
+                            <span class="copy-indicator">📋</span>
+                        </div>
+                        <!-- <div class="path-item" onclick="copyToClipboard('.md/Book_Reviews/Another_Book/README.md')">
+                            <span class="path-icon">📚</span>
+                            <code>.md/Book_Reviews/Another_Book/README.md</code>
+                            <span class="copy-indicator">📋</span>
+                        </div> -->
+                        <!-- Add more book review paths here -->
+                    </div>
+                </div>
+
+                <!-- Technical Documentation Category -->
+                <div class="dropdown-category">
+                    <div class="dropdown-header" onclick="toggleDropdown('techDocs')">
+                        <span class="dropdown-icon">⚙️</span>
+                        <span class="dropdown-title">Technical Documentation</span>
+                        <span class="dropdown-arrow" id="techDocs-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="techDocs">
+                        <div class="path-item" onclick="copyToClipboard('documentation_md_web_renderer.md')">
+                            <span class="path-icon">📄</span>
+                            <code>documentation_md_web_renderer.md</code>
+                            <span class="copy-indicator">📋</span>
+                        </div>
+                        <!-- <div class="path-item" onclick="copyToClipboard('.md/Technical_Docs/API_Reference/README.md')">
+                            <span class="path-icon">🔧</span>
+                            <code>.md/Technical_Docs/API_Reference/README.md</code>
+                            <span class="copy-indicator">📋</span>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Projects Category -->
+                <!-- <div class="dropdown-category">
+                    <div class="dropdown-header" onclick="toggleDropdown('projects')">
+                        <span class="dropdown-icon">🚀</span>
+                        <span class="dropdown-title">Projects</span>
+                        <span class="dropdown-arrow" id="projects-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="projects">
+                        <div class="path-item" onclick="copyToClipboard('.md/Projects/Project1/README.md')">
+                            <span class="path-icon">🎯</span>
+                            <code>.md/Projects/Project1/README.md</code>
+                            <span class="copy-indicator">📋</span>
+                        </div>
+                        <div class="path-item" onclick="copyToClipboard('.md/Projects/Web_App/README.md')">
+                            <span class="path-icon">🌐</span>
+                            <code>.md/Projects/Web_App/README.md</code>
+                            <span class="copy-indicator">📋</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Research Category -->
+                <!-- <div class="dropdown-category">
+                    <div class="dropdown-header" onclick="toggleDropdown('research')">
+                        <span class="dropdown-icon">🔬</span>
+                        <span class="dropdown-title">Research & Papers</span>
+                        <span class="dropdown-arrow" id="research-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="research">
+                        <div class="path-item" onclick="copyToClipboard('.md/Research/Paper1/README.md')">
+                            <span class="path-icon">📊</span>
+                            <code>.md/Research/Paper1/README.md</code>
+                            <span class="copy-indicator">📋</span>
+                        </div>
+                        <div class="path-item" onclick="copyToClipboard('.md/Research/Analysis/README.md')">
+                            <span class="path-icon">📈</span>
+                            <code>.md/Research/Analysis/README.md</code>
+                            <span class="copy-indicator">📋</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Add more categories as needed -->
+                
+            </div>
+            
+            <div style="margin-top: 16px; padding: 12px; background: #fff3cd; border-radius: 6px; border: 1px solid #ffeaa7;">
+                <strong>💡 How to add more paths:</strong>
+                <p style="margin: 8px 0 0 0; font-size: 14px;">
+                    Copy any <code>&lt;div class="dropdown-category"&gt;</code> section to create new categories, or add <code>&lt;div class="path-item"&gt;</code> elements within existing categories.
+                </p>
+            </div>
+        </div>
+
+        <div id="content" class="markdown-content"></div>
+    </div>
+
+    <script>
+        class MarkdownRenderer {
+            constructor() {
+                this.baseUrl = 'https://raw.githubusercontent.com/b1tranger/archive/main/';
+                this.currentPath = '';
+                this.init();
+            }
+
+            init() {
+                // Configure marked
+                marked.setOptions({
+                    highlight: function(code, lang) {
+                        if (lang && hljs.getLanguage(lang)) {
+                            return hljs.highlight(code, { language: lang }).value;
+                        }
+                        return hljs.highlightAuto(code).value;
+                    },
+                    breaks: true,
+                    gfm: true
+                });
+
+                // Bind events
+                document.getElementById('loadButton').addEventListener('click', () => this.loadFromInput());
+                document.getElementById('homeButton').addEventListener('click', () => this.goHome());
+                document.getElementById('pathInput').addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') this.loadFromInput();
+                });
+
+                // Load from URL hash or default
+                this.loadFromHash();
+            }
+
+            loadFromHash() {
+                const hash = window.location.hash.substring(1);
+                if (hash) {
+                    this.loadMarkdown(hash);
+                } else {
+                    this.goHome();
+                }
+            }
+
+            loadFromInput() {
+                const path = document.getElementById('pathInput').value.trim();
+                if (path) {
+                    this.loadMarkdown(path);
+                }
+            }
+
+            async loadMarkdown(path) {
+                this.showLoading();
+                this.currentPath = path;
+                
+                // Update URL hash
+                window.location.hash = path;
+                
+                // Update input
+                document.getElementById('pathInput').value = path;
+                
+                try {
+                    const url = this.baseUrl + path;
+                    const response = await fetch(url);
+                    
+                    if (!response.ok) {
+                        throw new Error(`Failed to load: ${response.status} ${response.statusText}`);
+                    }
+                    
+                    const content = await response.text();
+                    this.renderMarkdown(content);
+                    this.updateBreadcrumb(path);
+                    this.hideError();
+                    
+                } catch (error) {
+                    this.showError(`Error loading markdown: ${error.message}`);
+                    console.error('Error:', error);
+                }
+                
+                this.hideLoading();
+            }
+
+            renderMarkdown(content) {
+                const html = marked.parse(content);
+                document.getElementById('content').innerHTML = html;
+                document.getElementById('fileExplorer').style.display = 'none';
+                document.getElementById('pathsSection').style.display = 'none';
+                
+                // Process relative links
+                this.processLinks();
+            }
+
+            processLinks() {
+                const links = document.querySelectorAll('#content a');
+                links.forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href && !href.startsWith('http') && !href.startsWith('#')) {
+                        link.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const newPath = this.resolvePath(this.currentPath, href);
+                            this.loadMarkdown(newPath);
+                        });
+                    }
+                });
+            }
+
+            resolvePath(currentPath, relativePath) {
+                const currentDir = currentPath.substring(0, currentPath.lastIndexOf('/'));
+                if (relativePath.startsWith('./')) {
+                    return currentDir + '/' + relativePath.substring(2);
+                } else if (relativePath.startsWith('../')) {
+                    const upLevels = (relativePath.match(/\.\.\//g) || []).length;
+                    let targetDir = currentDir;
+                    for (let i = 0; i < upLevels; i++) {
+                        targetDir = targetDir.substring(0, targetDir.lastIndexOf('/'));
+                    }
+                    return targetDir + '/' + relativePath.replace(/\.\.\//g, '');
+                } else {
+                    return currentDir + '/' + relativePath;
+                }
+            }
+
+            updateBreadcrumb(path) {
+                const breadcrumb = document.getElementById('breadcrumb');
+                const parts = path.split('/').filter(part => part);
+                
+                let html = '<a href="#" onclick="renderer.goHome()">🏠 Home</a>';
+                let currentPath = '';
+                
+                parts.forEach((part, index) => {
+                    currentPath += (index > 0 ? '/' : '') + part;
+                    html += ' / ';
+                    if (index === parts.length - 1) {
+                        html += `<span>${part}</span>`;
+                    } else {
+                        html += `<a href="#" onclick="renderer.loadMarkdown('${currentPath}/README.md')">${part}</a>`;
+                    }
+                });
+                
+                breadcrumb.innerHTML = html;
+            }
+
+            goHome() {
+                window.location.hash = '';
+                this.currentPath = '';
+                document.getElementById('pathInput').value = '';
+                this.showHome();
+            }
+
+            showHome() {
+                document.getElementById('content').innerHTML = '';
+                document.getElementById('breadcrumb').innerHTML = '<span>🏠 Home</span>';
+                document.getElementById('fileExplorer').style.display = 'none';
+                document.getElementById('pathsSection').style.display = 'block';
+            }
+
+            showLoading() {
+                document.getElementById('loading').style.display = 'block';
+                document.getElementById('loadButton').disabled = true;
+            }
+
+            hideLoading() {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('loadButton').disabled = false;
+            }
+
+            showError(message) {
+                const errorDiv = document.getElementById('error');
+                errorDiv.textContent = message;
+                errorDiv.style.display = 'block';
+            }
+
+            hideError() {
+                document.getElementById('error').style.display = 'none';
+            }
+        }
+
+        // Initialize the renderer
+        const renderer = new MarkdownRenderer();
+
+        // Handle browser back/forward
+        window.addEventListener('hashchange', () => {
+            renderer.loadFromHash();
+        });
+
+        // Copy to clipboard function
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                // Update input field
+                document.getElementById('pathInput').value = text;
+                
+                // Show notification
+                const notification = document.createElement('div');
+                notification.className = 'copied-notification';
+                notification.textContent = '✅ Path copied and pasted!';
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.remove();
+                }, 2000);
+            }).catch(err => {
+                // Fallback for older browsers
+                const input = document.getElementById('pathInput');
+                input.value = text;
+                input.select();
+                document.execCommand('copy');
+                
+                const notification = document.createElement('div');
+                notification.className = 'copied-notification';
+                notification.textContent = '✅ Path pasted to input field!';
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.remove();
+                }, 2000);
+            });
+        }
+
+        // Toggle dropdown function
+        function toggleDropdown(categoryId) {
+            const content = document.getElementById(categoryId);
+            const arrow = document.getElementById(categoryId + '-arrow');
+            
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                arrow.classList.remove('rotated');
+            } else {
+                // Close all other dropdowns first
+                document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                    dropdown.classList.remove('open');
+                });
+                document.querySelectorAll('.dropdown-arrow').forEach(arrow => {
+                    arrow.classList.remove('rotated');
+                });
+                
+                // Open the clicked one
+                content.classList.add('open');
+                arrow.classList.add('rotated');
+            }
+        }
+    </script>
+</body>
+</html>
