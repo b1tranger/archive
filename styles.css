@@ -1,13 +1,6 @@
-/* USED NUMBERS UNTIL [ 4 ] 
-
-[ 1 ] = TOP BAR
- [ 2 ] = Blog window
-  [ 3 ] = Blog header
-   [ 4 ] = Drive iframe (CLAUDE)
-[ 5 ] = HIGHLIGHTS SECTION 
-[ 6 ] = BOTTOM BAR
-*/
-
+*{
+  text-wrap: wrap;
+}
 
 /* -----------------------------------------------------------------  */
 /* -----------------------------------------------------------------  */
