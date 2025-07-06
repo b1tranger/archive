@@ -482,6 +482,59 @@
             width: 30px;
             height: 30px;
         }
+
+        /* BACK BUTTON */
+
+        .back-icon {
+            z-index: 100;
+
+            position: fixed;
+            bottom: 65px;
+            right: 65px;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 10px;
+            /* border-radius: 50%; */
+            text-decoration: none;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+            width: 20px;
+            /* Fixed width */
+            height: 25px;
+            /* Fixed height */
+            line-height: 50px;
+            /* Centering the icon */
+            border-radius: 50%;
+
+            /* Disable mobile tap highlight */
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            outline: none;
+
+        }
+
+
+
+        /* Add rules for all link states to maintain the same color */
+        .back-icon:link,
+        .back-icon:visited,
+        .back-icon:active,
+        .back-icon:focus {
+            color: #ffffff;
+            /* Keep the same color for all states */
+            outline: none;
+        }
+
+        .back-icon:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
@@ -494,6 +547,12 @@
                 d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
         </svg>
     </a>
+
+    <!-- BACK BUTTON -->
+
+    <a href="javascript:history.back()" class="back-icon" style="box-sizing: content-box;">&#8592;</a>
+
+
     <div class="container">
         <div class="header">
             <h1>📚 Archive Reader</h1>
@@ -591,14 +650,27 @@
                         <span class="dropdown-arrow" id="research-arrow">▼</span>
                     </div>
                     <div class="dropdown-content" id="guide">
-                        <div class="path-item" onclick="copyToClipboard('.md/Guide/1. Final Year Projects Idea - Naem Azam Chowdhury/README.md')">
+                        <div class="path-item"
+                            onclick="copyToClipboard('.md/Guide/1. Final Year Projects Idea - Naem Azam Chowdhury/README.md')">
                             <span class="path-icon">📊</span>
                             <code>1. Final Year Projects Idea - Naem Azam Chowdhury</code>
                             <span class="copy-indicator">📋</span>
                         </div>
-                        <!-- <div class="path-item" onclick="copyToClipboard('.md/Research/Analysis/README.md')">
+                        <div class="path-item"
+                            onclick="copyToClipboard('.md/Guide/2. Project Based Learning - Talha Chowdhury/README.md')">
                             <span class="path-icon">📈</span>
-                            <code>.md/Research/Analysis/README.md</code>
+                            <code>2. Project Based Learning - Talha Chowdhury</code>
+                            <span class="copy-indicator">📋</span>
+                        </div>
+                        <div class="path-item"
+                            onclick="copyToClipboard('.md/Guide/3. Job Landing guidelines for students - Talha Chowdhury/README.md')">
+                            <span class="path-icon">📈</span>
+                            <code>3. Job Landing guidelines for students - Talha Chowdhury</code>
+                            <span class="copy-indicator">📋</span>
+                        </div>
+                        <!-- <div class="path-item" onclick="copyToClipboard('#')">
+                            <span class="path-icon">📈</span>
+                            <code>#</code>
                             <span class="copy-indicator">📋</span>
                         </div> -->
                     </div>
@@ -627,7 +699,7 @@
 
 
 
-                
+
 
                 <!-- Add more categories as needed -->
 
