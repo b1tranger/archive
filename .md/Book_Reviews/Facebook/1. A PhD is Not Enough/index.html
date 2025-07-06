@@ -20,6 +20,13 @@
 
 <body>
   <div id="content">Loading...</div>
+  <script>
+    fetch('README.md')
+      .then(res => res.text())
+      .then(text => {
+        document.getElementById('content').innerHTML = marked.parse(text);
+      });
+  </script>
   <div class="markdown-body">
     <script>
       fetch('README.md')
