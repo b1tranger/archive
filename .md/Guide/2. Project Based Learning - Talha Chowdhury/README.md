@@ -1,5 +1,8 @@
 Source: `https://www.facebook.com/share/p/1AtGcWpE5f/`
 
+![image](https://github.com/user-attachments/assets/8d054f79-deea-4253-8f02-ad040db9ca78)
+
+
 # কম্পিউটার সাইন্সে পড়ছেন বা পড়তে ইচ্ছুক? ভালো প্রজেক্ট আইডিয়ার সংকটে আছেন?
 
 যদি এমনটা হয়, তাহলে এই পোস্টটি আপনার জন্য!
