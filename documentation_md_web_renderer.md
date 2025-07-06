@@ -320,6 +320,6 @@ npx serve .
 
 ---
 
-*Documentation created: [Current Date]*
-*Last updated: [Current Date]*
+*Documentation created: [06.07.25]*
+*Last updated: [06.07.25]*
 *Version: 1.0*

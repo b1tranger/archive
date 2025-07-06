@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -404,6 +405,7 @@
                 transform: translateX(100%);
                 opacity: 0;
             }
+
             to {
                 transform: translateX(0);
                 opacity: 1;
@@ -414,24 +416,35 @@
             .container {
                 padding: 10px;
             }
-            
+
             .navigation {
                 flex-direction: column;
                 align-items: stretch;
             }
-            
+
             .nav-input {
                 min-width: auto;
             }
         }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <!-- HOME BUTTON -->
+
+    <a href="index.html" class="home-button">
+        <svg class="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+    </a>
     <div class="container">
         <div class="header">
             <h1>📚 Archive Reader</h1>
             <div class="navigation">
-                <input type="text" class="nav-input" id="pathInput" placeholder="Select a path from the available .md list">
+                <input type="text" class="nav-input" id="pathInput"
+                    placeholder="Select a path from the available .md list">
                 <button class="nav-button" id="loadButton">Load</button>
                 <button class="nav-button" id="homeButton">Home</button>
             </div>
@@ -452,10 +465,11 @@
         <!-- Custom HTML Section - Add your manual content here -->
         <div id="pathsSection" class="file-explorer">
             <h3>📋 Available Markdown Files</h3>
-            <p style="margin-bottom: 16px; color: #656d76;">Click any category to expand, then click a path to copy it to the input field above:</p>
-            
+            <p style="margin-bottom: 16px; color: #656d76;">Click any category to expand, then click a path to copy it
+                to the input field above:</p>
+
             <div class="dropdown-container">
-                
+
                 <!-- Book Reviews Category -->
                 <div class="dropdown-category">
                     <div class="dropdown-header" onclick="toggleDropdown('bookReviews')">
@@ -464,7 +478,8 @@
                         <span class="dropdown-arrow" id="bookReviews-arrow">▼</span>
                     </div>
                     <div class="dropdown-content" id="bookReviews">
-                        <div class="path-item" onclick="copyToClipboard('.md/Book_Reviews/Facebook/1. A PhD is Not Enough/README.md')">
+                        <div class="path-item"
+                            onclick="copyToClipboard('.md/Book_Reviews/Facebook/1. A PhD is Not Enough/README.md')">
                             <span class="path-icon">📚</span>
                             <code>.md/Book_Reviews/Facebook/1. A PhD is Not Enough/README.md</code>
                             <span class="copy-indicator">📋</span>
@@ -542,13 +557,15 @@
                 </div> -->
 
                 <!-- Add more categories as needed -->
-                
+
             </div>
-            
-            <div style="margin-top: 16px; padding: 12px; background: #fff3cd; border-radius: 6px; border: 1px solid #ffeaa7;">
+
+            <div
+                style="margin-top: 16px; padding: 12px; background: #fff3cd; border-radius: 6px; border: 1px solid #ffeaa7;">
                 <strong>💡 How to add more paths:</strong>
                 <p style="margin: 8px 0 0 0; font-size: 14px;">
-                    Copy any <code>&lt;div class="dropdown-category"&gt;</code> section to create new categories, or add <code>&lt;div class="path-item"&gt;</code> elements within existing categories.
+                    Copy any <code>&lt;div class="dropdown-category"&gt;</code> section to create new categories, or add
+                    <code>&lt;div class="path-item"&gt;</code> elements within existing categories.
                 </p>
             </div>
         </div>
@@ -567,7 +584,7 @@
             init() {
                 // Configure marked
                 marked.setOptions({
-                    highlight: function(code, lang) {
+                    highlight: function (code, lang) {
                         if (lang && hljs.getLanguage(lang)) {
                             return hljs.highlight(code, { language: lang }).value;
                         }
@@ -607,31 +624,31 @@
             async loadMarkdown(path) {
                 this.showLoading();
                 this.currentPath = path;
-                
+
                 // Update URL hash
                 window.location.hash = path;
-                
+
                 // Update input
                 document.getElementById('pathInput').value = path;
-                
+
                 try {
                     const url = this.baseUrl + path;
                     const response = await fetch(url);
-                    
+
                     if (!response.ok) {
                         throw new Error(`Failed to load: ${response.status} ${response.statusText}`);
                     }
-                    
+
                     const content = await response.text();
                     this.renderMarkdown(content);
                     this.updateBreadcrumb(path);
                     this.hideError();
-                    
+
                 } catch (error) {
                     this.showError(`Error loading markdown: ${error.message}`);
                     console.error('Error:', error);
                 }
-                
+
                 this.hideLoading();
             }
 
@@ -640,7 +657,7 @@
                 document.getElementById('content').innerHTML = html;
                 document.getElementById('fileExplorer').style.display = 'none';
                 document.getElementById('pathsSection').style.display = 'none';
-                
+
                 // Process relative links
                 this.processLinks();
             }
@@ -678,10 +695,10 @@
             updateBreadcrumb(path) {
                 const breadcrumb = document.getElementById('breadcrumb');
                 const parts = path.split('/').filter(part => part);
-                
+
                 let html = '<a href="#" onclick="renderer.goHome()">🏠 Home</a>';
                 let currentPath = '';
-                
+
                 parts.forEach((part, index) => {
                     currentPath += (index > 0 ? '/' : '') + part;
                     html += ' / ';
@@ -691,7 +708,7 @@
                         html += `<a href="#" onclick="renderer.loadMarkdown('${currentPath}/README.md')">${part}</a>`;
                     }
                 });
-                
+
                 breadcrumb.innerHTML = html;
             }
 
@@ -743,13 +760,13 @@
             navigator.clipboard.writeText(text).then(() => {
                 // Update input field
                 document.getElementById('pathInput').value = text;
-                
+
                 // Show notification
                 const notification = document.createElement('div');
                 notification.className = 'copied-notification';
                 notification.textContent = '✅ Path copied and pasted!';
                 document.body.appendChild(notification);
-                
+
                 setTimeout(() => {
                     notification.remove();
                 }, 2000);
@@ -759,12 +776,12 @@
                 input.value = text;
                 input.select();
                 document.execCommand('copy');
-                
+
                 const notification = document.createElement('div');
                 notification.className = 'copied-notification';
                 notification.textContent = '✅ Path pasted to input field!';
                 document.body.appendChild(notification);
-                
+
                 setTimeout(() => {
                     notification.remove();
                 }, 2000);
@@ -775,7 +792,7 @@
         function toggleDropdown(categoryId) {
             const content = document.getElementById(categoryId);
             const arrow = document.getElementById(categoryId + '-arrow');
-            
+
             if (content.classList.contains('open')) {
                 content.classList.remove('open');
                 arrow.classList.remove('rotated');
@@ -787,7 +804,7 @@
                 document.querySelectorAll('.dropdown-arrow').forEach(arrow => {
                     arrow.classList.remove('rotated');
                 });
-                
+
                 // Open the clicked one
                 content.classList.add('open');
                 arrow.classList.add('rotated');
@@ -795,4 +812,5 @@
         }
     </script>
 </body>
+
 </html>
