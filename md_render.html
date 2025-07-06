@@ -13,6 +13,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            /* text-wrap: wrap !important; */
         }
 
         body {
@@ -77,6 +78,19 @@
             cursor: not-allowed;
         }
 
+        /* code{
+            text-wrap: wrap;
+            display: flex;
+            flex-wrap: wrap;
+        } */
+        /* .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            color: #656d76;
+            margin-bottom: 20px;
+        } */
         .breadcrumb {
             display: flex;
             align-items: center;
@@ -84,6 +98,10 @@
             font-size: 14px;
             color: #656d76;
             margin-bottom: 20px;
+            flex-wrap: wrap;
+            /* Allows flex items to wrap to the next line */
+            word-break: break-all;
+            /* Breaks long words or paths to prevent overflow */
         }
 
         .breadcrumb a {
@@ -110,10 +128,18 @@
             color: #d1242f;
         }
 
+        /* .markdown-content {
+            background: white;
+            border-radius: 6px;
+            line-height: 1.6;
+        } */
+
         .markdown-content {
             background: white;
             border-radius: 6px;
             line-height: 1.6;
+            overflow-wrap: break-word;
+            /* Prevents long text like URLs from overflowing */
         }
 
         .markdown-content h1,
@@ -538,7 +564,7 @@
     </style>
 </head>
 
-<body>
+<body style="text-wrap: wrap;">
     <!-- HOME BUTTON -->
 
     <a href="index.html" class="home-button">
@@ -668,17 +694,20 @@
                             <code>3. Job Landing guidelines for students - Talha Chowdhury</code>
                             <span class="copy-indicator">📋</span>
                         </div>
-                        <div class="path-item" onclick="copyToClipboard('.md/Guide/4. Admitted in a random private uni in CSE at a low cost - Talha Chowdhury/README.md')">
+                        <div class="path-item"
+                            onclick="copyToClipboard('.md/Guide/4. Admitted in a random private uni in CSE at a low cost - Talha Chowdhury/README.md')">
                             <span class="path-icon">🌐</span>
                             <code>4. Admitted in a random private uni in CSE at a low cost - Talha Chowdhury</code>
                             <span class="copy-indicator">📋</span>
                         </div>
-                        <div class="path-item" onclick="copyToClipboard('.md/Guide/5. Resources for Programming Beginners - Talha Chowdhury/README.md')">
+                        <div class="path-item"
+                            onclick="copyToClipboard('.md/Guide/5. Resources for Programming Beginners - Talha Chowdhury/README.md')">
                             <span class="path-icon">📈</span>
                             <code>5. Resources for Programming Beginners - Talha Chowdhury</code>
                             <span class="copy-indicator">📋</span>
                         </div>
-                        <div class="path-item" onclick="copyToClipboard('.md/Guide/6. কি কি করলে গ্রাজুয়েশন এর পরেও বেকার থাকবে - Talha Chowdhury/README.md')">
+                        <div class="path-item"
+                            onclick="copyToClipboard('.md/Guide/6. কি কি করলে গ্রাজুয়েশন এর পরেও বেকার থাকবে - Talha Chowdhury/README.md')">
                             <span class="path-icon">📈</span>
                             <code>6. কি কি করলে গ্রাজুয়েশন এর পরেও বেকার থাকবে - Talha Chowdhury</code>
                             <span class="copy-indicator">📋</span>
