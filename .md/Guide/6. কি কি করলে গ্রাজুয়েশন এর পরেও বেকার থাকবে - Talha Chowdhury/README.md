@@ -1,4 +1,4 @@
-Source: `
+Source: `https://www.facebook.com/share/p/1LD9dtqm37/`
 
 Here's the message converted to Markdown:
 
@@ -48,4 +48,15 @@ I have thousands of resources to address all these skills in my page, [Talha Cho
 # Comments
 
 - Professional Communication Primer: https://docs.google.com/document/d/16lX_U8immOVgrf9hRXv4AcuOr5Z__4oEnn2QG36kThE/edit?tab=t.0#heading=h.gq45fj5u86fl
-- Resume Checklist and Formatting, including Resume Examples: https://docs.google.com/document/d/1TDGkSD5l--GjKu56jw6frHmjr075QHbr_wfma_gmv8s/edit?tab=t.0#heading=h.gjdgxs Backup
+- Resume Checklist and Formatting, including Resume Examples: https://docs.google.com/document/d/1TDGkSD5l--GjKu56jw6frHmjr075QHbr_wfma_gmv8s/edit?tab=t.0#heading=h.gjdgxs [Backup](https://github.com/b1tranger/archive/blob/main/.md/Guide/6.%20%E0%A6%95%E0%A6%BF%20%E0%A6%95%E0%A6%BF%20%E0%A6%95%E0%A6%B0%E0%A6%B2%E0%A7%87%20%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A7%81%E0%A7%9F%E0%A7%87%E0%A6%B6%E0%A6%A8%20%E0%A6%8F%E0%A6%B0%20%E0%A6%AA%E0%A6%B0%E0%A7%87%E0%A6%93%20%E0%A6%AC%E0%A7%87%E0%A6%95%E0%A6%BE%E0%A6%B0%20%E0%A6%A5%E0%A6%BE%E0%A6%95%E0%A6%AC%E0%A7%87%20-%20Talha%20Chowdhury/CodePath%20Resume%20Checklist%20%26%20Formats.md)
+- What good self-introduction looks like in Interviews: https://www.techinterviewhandbook.org/self-introduction/
+- Answering interview questions, pay attention to the structures: https://www.techinterviewhandbook.org/behavioral-interview/
+
+---
+
+Mohammad Risfatul Islam
+Teachers are the pioneer of students life. Teachers of Bangladesh in any field mostly have no professional experience which leads them to teaching nothing about professional life after graduation. I completely understand it all should depend on the individual who thrives for the job but the role of a teacher is invaluable in such aspect. I strongly believe one of the requirement to become a professor should be the personal having 2 years of professional experience.
+Thank you so much for taking the initiative to guide young soul who are struggling in this tough period.
+
+---
+
