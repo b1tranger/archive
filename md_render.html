@@ -427,7 +427,62 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        /* HOME BUTTON */
+
+
+        .home-button {
+            z-index: 100;
+
+            position: fixed;
+            bottom: 65px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s, transform 0.2s;
+
+            /* Disable mobile tap highlight */
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            outline: none;
+
+        }
+
+
+
+        /* Add rules for all link states to maintain the same color */
+        .home-button:link,
+        .home-button:visited,
+        .home-button:active,
+        .home-button:focus {
+            color: #ffffff;
+            /* Keep the same color for all states */
+            outline: none;
+        }
+
+
+        .home-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        .home-icon {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
 </head>
 
 <body>
