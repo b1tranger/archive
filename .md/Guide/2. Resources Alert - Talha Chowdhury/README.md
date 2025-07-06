@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/1b99bd8b-481c-4c10-b92c-152045760a14)Source: `https://www.facebook.com/share/p/1AtGcWpE5f/`
+Source: `https://www.facebook.com/share/p/1AtGcWpE5f/`
 
 ![image](https://github.com/user-attachments/assets/8d054f79-deea-4253-8f02-ad040db9ca78)
 
@@ -19,6 +19,39 @@
 
 #productivity #computerscience #project #opportunities #technology #tech #github #learning #extracurricular #extracurricularactivities
 
+
+<hr>
+
+
+
+Talha Chowdhury
+May 22, 2022
+
+কোডিং শেখার কোর্সের অভাব নেই ইন্টারনেটে, কিন্তু প্রোগ্রামাররা বেশিরভাগ সময় যা নিয়ে কাটায়—**Tools & Softwares**, সেগুলো নিয়ে কোয়ালিটি মানের কোর্সের সংখ্যা নেহাতই নগণ্য। এই গ্যাপটা পূরণ করার জন্য একটা Mind Blowing কোর্স হলো **MIT (Massachusetts Institute of Technology) এর Missing Semester কোর্সটা**। প্রোগ্রামিং জীবনে ১০ গুণ প্রোডাক্টিভ হতে সাহায্য করবে এই কোর্স এ পড়ানো টপিক গুলো। লেকচার গুলোর নাম এরকম:
+
+1.  Shell Tools & Scripting
+2.  Editors (Vim)
+3.  Data Wrangling
+4.  Command-line Environment
+5.  Version Control (Git)
+6.  Debugging & Profiling
+7.  Metaprogramming
+8.  Security & Cryptography
+9.  Potpourri
+
+ইন্টারেস্টিং না? প্রোগ্রামিং জগতে অনেকদিন থেকেও এখান থেকে প্রচুর নতুন জিনিষ শিখেছি।
+
+**Bonus Tips:** যারা Windows Operating System ব্যবহার করে তারা কোর্সটির ম্যাটারিয়াল ফলো করার জন্য Windows Store থেকে **Windows Subsystem for Linux (WLS2)** ডাউনলোড করে নিও/নিয়েন।
+
+কোর্সের লিংক কমেন্ট সেকশন এ। টাইমলাইনে শেয়ার করে যাদের দরকার হতে পারে তাদের কাছে ছড়িয়ে দাও/দিন।
+
+#ResourceAlert
+
+#productivity #resources #opportunities #coding #programming #programmer #software #softwareengineer #MIT #windows
+
+কোর্সের লিংক: [https://youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J](https://youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J)
+
+SHARE to change lives!
 
 <hr>
 
