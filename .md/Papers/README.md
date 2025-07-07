@@ -1,1 +1,1 @@
-1. [Linux: a Portable Operating System Linus Torvalds.pdf](https://github.com/user-attachments/files/21110553/paper.Linux.a.Portable.Operating.System.Linus.Torvalds.pdf)
+1. [Linux: a Portable Operating System Linus Torvalds.pdf](https://github.com/user-attachments/files/21110553/paper.Linux.a.Portable.Operating.System.Linus.Torvalds.pdf) nixCraft: Linux: a Portable Operating System (1997, thesis about Linux by its creator. It is worth reading for all Linux users, developers and fans) [post](https://www.facebook.com/share/p/1ExtDNHq2k/)
