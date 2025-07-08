@@ -724,12 +724,11 @@
                 <div class="dropdown-category">
                     <div class="dropdown-header" onclick="toggleDropdown('research')">
                         <span class="dropdown-icon">🔬</span>
-                        <span class="dropdown-title">Reseach Papers to read</span>
+                        <span class="dropdown-title">Reseach Papers</span>
                         <span class="dropdown-arrow" id="research-arrow">▼</span>
                     </div>
                     <div class="dropdown-content" id="research">
-                        <div class="path-item"
-                            onclick="copyToClipboard('.md/Papers/README.md')">
+                        <div class="path-item" onclick="copyToClipboard('.md/Papers/README.md')">
                             <span class="path-icon">📊</span>
                             <code>Linked List to papers</code>
                             <span class="copy-indicator">📋</span>
@@ -772,11 +771,34 @@
                     </div>
                 </div>
 
-                <!-- Technical Documentation Category -->
+                <!-- Software Documentation Category -->
                 <div class="dropdown-category">
+                    <div class="dropdown-header" onclick="toggleDropdown('Docs')">
+                        <span class="dropdown-icon">⚙️</span>
+                        <span class="dropdown-title">Software Documentations</span>
+                        <span class="dropdown-arrow" id="techDocs-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="Docs">
+                        <div class="path-item" onclick="copyToClipboard('.md/Doc/1. Overleaf [LaTeX]/README.md')">
+                            <span class="path-icon">📄</span>
+                            <code>1. Overleaf [LaTeX]</code>
+                            <span class="copy-indicator">📋</span>
+                        </div>
+                        <!-- <div class="path-item" onclick="copyToClipboard('.md/Technical_Docs/API_Reference/README.md')">
+                            <span class="path-icon">🔧</span>
+                            <code>.md/Technical_Docs/API_Reference/README.md</code>
+                            <span class="copy-indicator">📋</span>
+                        </div> -->
+                    </div>
+                </div>
+
+                <hr style="margin-top: 200px;margin-bottom: 50px;">
+
+                <!-- Technical Documentation Category -->
+                <div class="dropdown-category" style="margin-bottom: 50px;">
                     <div class="dropdown-header" onclick="toggleDropdown('techDocs')">
                         <span class="dropdown-icon">⚙️</span>
-                        <span class="dropdown-title">Technical Documentation</span>
+                        <span class="dropdown-title" style="font-style:oblique;"><b>[ Project Documentation ]</b></span>
                         <span class="dropdown-arrow" id="techDocs-arrow">▼</span>
                     </div>
                     <div class="dropdown-content" id="techDocs">
@@ -792,6 +814,8 @@
                         </div> -->
                     </div>
                 </div>
+
+
 
 
 
