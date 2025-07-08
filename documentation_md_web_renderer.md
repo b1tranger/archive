@@ -2,7 +2,7 @@
 
 ## Overview
 
-This documentation covers the development and usage of a dynamic markdown renderer that displays GitHub repository markdown files in a browser with GitHub-style formatting. The system allows URL-based navigation and provides an organized interface for accessing markdown documentation.
+This documentation covers the development and usage of a dynamic markdown renderer that displays GitHub repository markdown files in a browser with GitHub-style formatting. The system allows URL-based navigation and provides an organized interface for accessing markdown documentation. This also ensures that anyone can view the same preview on GitHub by visiting the [GitHub repository](https://github.com/b1tranger/archive), if the website does not work as intended.
 
 ## Project Requirements
 
