@@ -8,6 +8,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.1/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+
+
+    <!-- ICON LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
     <style>
         * {
             margin: 0;
@@ -766,6 +771,27 @@
                         <!-- <div class="path-item" onclick="copyToClipboard('#')">
                             <span class="path-icon">📈</span>
                             <code>#</code>
+                            <span class="copy-indicator">📋</span>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Reddit -->
+                <div class="dropdown-category">
+                    <div class="dropdown-header" onclick="toggleDropdown('reddit')">
+                        <span class="dropdown-icon"><i class="fa-brands fa-reddit"></i></span>
+                        <span class="dropdown-title">Reddit</span>
+                        <span class="dropdown-arrow" id="techDocs-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-content" id="reddit">
+                        <div class="path-item" onclick="copyToClipboard('.md/Reddit/1. r.Programming/FAQ/README.md')">
+                            <span class="path-icon">📄</span>
+                            <code>1. r.Programming/FAQ/</code>
+                            <span class="copy-indicator">📋</span>
+                        </div>
+                        <!-- <div class="path-item" onclick="copyToClipboard('.md/Technical_Docs/API_Reference/README.md')">
+                            <span class="path-icon">🔧</span>
+                            <code>.md/Technical_Docs/API_Reference/README.md</code>
                             <span class="copy-indicator">📋</span>
                         </div> -->
                     </div>
