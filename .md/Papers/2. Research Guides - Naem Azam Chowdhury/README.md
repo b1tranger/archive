@@ -1,13 +1,16 @@
-Sources:
-1. রিসার্চ করতে চাও? তাহলে শুরু করার আগে কিছু জিনিস তোমাকে জানতে হবে... https://www.facebook.com/share/p/19JpxziTFM/
-2. আন্ডারগ্র্যাজুয়েট ছেলেমেয়েদের জন্য রিসার্চে হাতেখড়ি – শূন্য থেকে শুরু করার ফুল গাইডলাইন https://www.facebook.com/share/p/1HdxYzrtye/
-3. রিসার্চ: গবেষণার যে ভয়ংকর দিকগুলো আপনি কখনোই দেখেননি https://www.facebook.com/share/p/19QLFxznjk/
-4. রিসার্চের টপ-লেভেল কিছু শব্দ ( Keywords ) রয়েছে সেগুলো আপনাকে জানতে হবে  https://www.facebook.com/share/p/1CcMdrdxcC/
-5. রিসার্চ সবার জন্য নয় ... https://www.facebook.com/share/p/1CDsUbxqXt/
-6. video https://youtu.be/iVdPuPCQ4SY
+### Sources:
+1. [রিসার্চ করতে চাও? তাহলে শুরু করার আগে কিছু জিনিস তোমাকে জানতে হবে...](#article-1) &larr; https://www.facebook.com/share/p/19JpxziTFM/
+2. আন্ডারগ্র্যাজুয়েট ছেলেমেয়েদের জন্য রিসার্চে হাতেখড়ি – শূন্য থেকে শুরু করার ফুল গাইডলাইন &larr; https://www.facebook.com/share/p/1HdxYzrtye/
+3. রিসার্চ: গবেষণার যে ভয়ংকর দিকগুলো আপনি কখনোই দেখেননি &larr; https://www.facebook.com/share/p/19QLFxznjk/
+4. রিসার্চের টপ-লেভেল কিছু শব্দ ( Keywords ) রয়েছে সেগুলো আপনাকে জানতে হবে &larr; https://www.facebook.com/share/p/1CcMdrdxcC/
+5. রিসার্চ সবার জন্য নয় ... &larr; https://www.facebook.com/share/p/1CDsUbxqXt/
+6. video &larr; https://youtu.be/iVdPuPCQ4SY
   ---
-# 1. রিসার্চ করতে চাও? তাহলে শুরু করার আগে কিছু জিনিস তোমাকে জানতে হবে... 
-https://www.facebook.com/share/p/19JpxziTFM/
+# Article-1 
+রিসার্চ করতে চাও? তাহলে শুরু করার আগে কিছু জিনিস তোমাকে জানতে হবে... 
+https://www.facebook.com/share/p/19JpxziTFM/ [ [go to index](#sources) ]
+<img width="940" height="788" alt="image" src="https://github.com/user-attachments/assets/2de683fc-0788-4ad8-bef8-9c8b0667d7c4" />
+
 
 July 19 at 8:36 AM
  ·
