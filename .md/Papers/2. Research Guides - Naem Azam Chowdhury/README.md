@@ -420,7 +420,6 @@ Security Researcher, China
 
 রিসার্চ সবার জন্য নয় ... https://www.facebook.com/share/p/1CDsUbxqXt/
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iVdPuPCQ4SY?si=Nmab7MA_XU7nKxRL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 July 24 at 10:51 AM
  ·
@@ -475,6 +474,7 @@ Security Researcher, China 🇨🇳
 [ [go to index](#sources) ]
 The Ultimate Research Guide Masterclass for Everyone 📚 Zero to Published! থিসিস রিসার্চ | Naem Azam Naem Azam Chowdhury https://youtu.be/iVdPuPCQ4SY | https://t.me/c/2499564727/304/3174
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iVdPuPCQ4SY?si=Nmab7MA_XU7nKxRL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 বিশ্ববিদ্যালয়ে পড়াশোনা শুরু করলেই একটা শব্দ বারবার কানে আসে — "রিসার্চ" একটা সময় আসে যখন মনে হয়, “রিসার্চ করলে ভালো হতো, CV-ও স্ট্রং হতো, বাইরে স্কলারশিপও পেতাম।” কিন্তু সমস্যাটা হলো, কোথা থেকে শুরু করবো, কী নিয়ে কাজ করবো, কাকে জিজ্ঞেস করবো — কিছুই জানি না! 
 আপনি কি ব্যাচেলর শেষ বর্ষের ছাত্র/ছাত্রী? থিসিস আর রিসার্চ পেপার নিয়ে ভয় লাগছে? তাহলে এই ভিডিওটাই আপনার জন্য – শূন্য থেকে অ্যাডভান্স গাইড!
