@@ -474,8 +474,11 @@ Security Researcher, China 🇨🇳
 [ [go to index](#sources) ]
 The Ultimate Research Guide Masterclass for Everyone 📚 Zero to Published! থিসিস রিসার্চ | Naem Azam Naem Azam Chowdhury https://youtu.be/iVdPuPCQ4SY | https://t.me/c/2499564727/304/3174
 
-<img width="1412" height="794" alt="Naem Azam Chowdhury - The Ultimate Research Guide Masterclass for Everyone 📚 Zero to Published! থিসিস রিসার্চ Naem Azam  iVdPuPCQ4SY - 1412x794 - 0m00s" src="https://github.com/user-attachments/assets/fa60c13b-3b6b-4e3e-a298-d2fe12c4c996" />
-<span style="font-size:30px;">[Watch the video](https://youtu.be/iVdPuPCQ4SY)</span>
+<img width="1412" alt="Naem Azam Chowdhury - The Ultimate Research Guide Masterclass for Everyone 📚 Zero to Published! থিসিস রিসার্চ Naem Azam  iVdPuPCQ4SY - 1412x794 - 0m00s" src="https://github.com/user-attachments/assets/fa60c13b-3b6b-4e3e-a298-d2fe12c4c996" />
+
+# [Watch the video](https://youtu.be/iVdPuPCQ4SY)
+
+
 
 বিশ্ববিদ্যালয়ে পড়াশোনা শুরু করলেই একটা শব্দ বারবার কানে আসে — "রিসার্চ" একটা সময় আসে যখন মনে হয়, “রিসার্চ করলে ভালো হতো, CV-ও স্ট্রং হতো, বাইরে স্কলারশিপও পেতাম।” কিন্তু সমস্যাটা হলো, কোথা থেকে শুরু করবো, কী নিয়ে কাজ করবো, কাকে জিজ্ঞেস করবো — কিছুই জানি না! 
 আপনি কি ব্যাচেলর শেষ বর্ষের ছাত্র/ছাত্রী? থিসিস আর রিসার্চ পেপার নিয়ে ভয় লাগছে? তাহলে এই ভিডিওটাই আপনার জন্য – শূন্য থেকে অ্যাডভান্স গাইড!
