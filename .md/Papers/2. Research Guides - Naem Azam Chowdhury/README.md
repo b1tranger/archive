@@ -420,6 +420,8 @@ Security Researcher, China
 
 রিসার্চ সবার জন্য নয় ... https://www.facebook.com/share/p/1CDsUbxqXt/
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iVdPuPCQ4SY?si=Nmab7MA_XU7nKxRL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 July 24 at 10:51 AM
  ·
 রিসার্চ সবার জন্য নয় ...
