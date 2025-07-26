@@ -1,4 +1,4 @@
-*{
+* {
   text-wrap: wrap;
 }
 
@@ -12,6 +12,10 @@
   /* border-bottom: 2px solid #ddd; */
   position: relative;
   /* padding: 20px; */
+}
+
+.Section100vh {
+  height: 100vh;
 }
 
 .faq-icon {
