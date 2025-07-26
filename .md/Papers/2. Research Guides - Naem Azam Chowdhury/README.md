@@ -4,7 +4,7 @@
 - [Article-3](#article-3). রিসার্চ: গবেষণার যে ভয়ংকর দিকগুলো আপনি কখনোই দেখেননি &larr; https://www.facebook.com/share/p/19QLFxznjk/
 - [Article-4](#article-4). রিসার্চের টপ-লেভেল কিছু শব্দ ( Keywords ) রয়েছে সেগুলো আপনাকে জানতে হবে &larr; https://www.facebook.com/share/p/1CcMdrdxcC/
 - [Article-5](#article-5). রিসার্চ সবার জন্য নয় ... &larr; https://www.facebook.com/share/p/1CDsUbxqXt/
-- [Article-6](#article-6). The Ultimate Research Guide Masterclass for Everyone 📚 Zero to Published! থিসিস রিসার্চ | Naem Azam Naem Azam Chowdhury &larr; https://youtu.be/iVdPuPCQ4SY
+- [Article-6](#article-6). The Ultimate Research Guide Masterclass for Everyone 📚 Zero to Published! থিসিস রিসার্চ &larr; https://youtu.be/iVdPuPCQ4SY
    
   ---
 # Article-1  
