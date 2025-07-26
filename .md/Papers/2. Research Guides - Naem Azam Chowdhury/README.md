@@ -6,9 +6,9 @@
 5. রিসার্চ সবার জন্য নয় ... &larr; https://www.facebook.com/share/p/1CDsUbxqXt/
 6. video &larr; https://youtu.be/iVdPuPCQ4SY
   ---
-# Article-1 
+# Article-1  [ [go to index](#sources) ]
 রিসার্চ করতে চাও? তাহলে শুরু করার আগে কিছু জিনিস তোমাকে জানতে হবে... 
-https://www.facebook.com/share/p/19JpxziTFM/ [ [go to index](#sources) ]
+https://www.facebook.com/share/p/19JpxziTFM/
 <img width="940" height="788" alt="image" src="https://github.com/user-attachments/assets/2de683fc-0788-4ad8-bef8-9c8b0667d7c4" />
 
 
