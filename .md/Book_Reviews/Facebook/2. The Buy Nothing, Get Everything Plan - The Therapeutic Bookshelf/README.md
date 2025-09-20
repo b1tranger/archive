@@ -1,3 +1,6 @@
+<img width="526" height="701" alt="image" src="https://github.com/user-attachments/assets/1fc0818e-1c5a-4e10-a8df-52274c2c1cb5" />
+
+
 Before I opened The Buy Nothing, Get Everything Plan, I thought I understood “enough.” I’ve decluttered, budgeted, even sworn off online shopping for months at a time. But Liesl Clark and Rebecca Rockefeller aren’t offering another minimalist challenge or a how-to on frugality. They are proposing something far more radical: a culture shift from ownership to connection, from “mine” to “ours.”
 
 It started, fittingly, with a question the authors once asked on their own island: What if neighbors shared what they already owned instead of buying more? That single thought birthed the global Buy Nothing movement, now millions strong. This book captures the heart of that idea and it’s as much a manifesto as it is a manual.
