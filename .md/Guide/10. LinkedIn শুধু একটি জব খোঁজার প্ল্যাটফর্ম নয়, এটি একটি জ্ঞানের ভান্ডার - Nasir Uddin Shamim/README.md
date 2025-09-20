@@ -1,5 +1,6 @@
 https://www.facebook.com/share/p/1ARUFuLwfs/
 
+<img width="879" height="569" alt="image" src="https://github.com/user-attachments/assets/1535d30b-08b2-430b-ae6d-30fcefb90b49" />
 
 
 ১. Gary Vaynerchuk (গ্যারি ভেইনারচাক)!
