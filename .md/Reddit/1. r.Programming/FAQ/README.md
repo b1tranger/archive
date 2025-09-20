@@ -1,4 +1,6 @@
-# Welcome
+https://www.reddit.com/r/learnprogramming/wiki/faq/
+
+## Welcome
 
 Welcome to /r/learnprogramming. This is a list of some of the most frequently asked questions on this subreddit. If your question is one of these, it has probably been answered many times before, and you should try using reddit's search facilities (look in the sidebar) to find previous answers before posting here.
 

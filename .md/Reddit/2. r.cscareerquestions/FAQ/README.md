@@ -1,3 +1,6 @@
+https://www.reddit.com/r/cscareerquestions/wiki/index/
+
+
 # Welcome to /r/CSCareerQuestions!
 
 This is the Computer Science Career Questions subreddit, which is meant for questions about *degrees* and *careers* in computer science, software development, and associated tech jobs (including QA, Business Analysis, Project Management, etc.). If you are looking to post specifically about IT jobs, please head on over to /r/ITCareerQuestions, as they have more expertise in that field.
