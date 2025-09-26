@@ -140,6 +140,8 @@ September 17 at 9:59 AM
 এই প্রজেক্টা ঠিকঠাক ভাবে করতে পারলে, আমি Flowsurf এ তাকে ডিরেক্ট Interview কলে আনবো। 
 ডেভেলপার, ডিজাইনার, প্রোডাক্ট, AI ইঞ্জিনিয়ার, ইভেন জেনারেল Systems Thinker যে কেউ এটা সল্ভ করার ট্রাই করতে পারবে। 
 
+<img width="1418" height="998" alt="image" src="https://github.com/user-attachments/assets/a8f5d5f6-86f5-4c5e-afc4-6fe3c6036045" />
+
 Talha Chowdhury
  
 September 18 at 11:19 AM
