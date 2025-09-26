@@ -2,6 +2,7 @@
 1. [The Brain Slump](#the-brain-slump)
 2. ["How to Build with AI" by Andrew Ng](#how-to-build-with-ai-by-andrew-ng)
 3. [This is the perfect algorithm to be a cracked Builder/Engineer in 2025. [Free Resources]](#this-is-the-perfect-algorithm-to-be-a-cracked-builderengineer-in-2025-free-resources)
+4. The Open HUD Challenge
 
 ---
 # [The Brain Slump](#index)
@@ -127,7 +128,7 @@ https://gitprint.me/
 
 ---
 
-# The Open HUD Challenge
+# [The Open HUD Challenge](#index)
 https://www.facebook.com/share/p/1AGGyfo1Xt/
 
 The Open HUD Challenge এর জন্য প্রশ্ন আছে সেটা এখানে করা যাবে। 
