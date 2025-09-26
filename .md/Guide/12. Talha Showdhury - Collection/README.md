@@ -1,5 +1,10 @@
+### Index
+1. [The Brain Slump](#the-brain-slump)
+2. ["How to Build with AI" by Andrew Ng](#how-to-build-with-ai-by-andrew-ng)
+3. [This is the perfect algorithm to be a cracked Builder/Engineer in 2025. [Free Resources]](#this-is-the-perfect-algorithm-to-be-a-cracked-builderengineer-in-2025-free-resources)
 
-# The Brain Slump
+---
+# [The Brain Slump](#index)
 https://www.facebook.com/share/p/19GJ9tfWst/
 
 <img width="1206" height="394" alt="image" src="https://github.com/user-attachments/assets/33fc7ac2-24d0-4041-834b-6c4d9211e590" />
@@ -30,7 +35,7 @@ So that's it. One doc, for all your writings across the internet.
 
 ---
 
-# "How to Build with AI" by Andrew Ng
+# ["How to Build with AI" by Andrew Ng](#index)
 https://www.facebook.com/share/p/1CmvoZFreY/
 
 <img width="2280" height="1118" alt="image" src="https://github.com/user-attachments/assets/9b2dd697-4f98-4183-a929-8062c94ffbb4" />
@@ -89,8 +94,10 @@ Talha Chowdhury
 
 ---
 
-# This is the perfect algorithm to be a cracked Builder/Engineer in 2025. [Free Resources]
+# [This is the perfect algorithm to be a cracked Builder/Engineer in 2025. [Free Resources]](#index)
 https://www.facebook.com/share/p/1BA246WpJP/
+
+<img width="1820" height="934" alt="image" src="https://github.com/user-attachments/assets/c1b6acfe-a17d-46a8-ae7b-ee7bc50480d1" />
 
 Talha Chowdhury
  
