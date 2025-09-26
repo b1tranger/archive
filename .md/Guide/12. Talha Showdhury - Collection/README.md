@@ -125,5 +125,105 @@ https://forgoodfirstissue.github.com/
 - Print Github Repositories as Books:
 https://gitprint.me/
 
+---
+
+# The Open HUD Challenge
+https://www.facebook.com/share/p/1AGGyfo1Xt/
+
+The Open HUD Challenge এর জন্য প্রশ্ন আছে সেটা এখানে করা যাবে। 
+যেহেতু workspace ফুল হয়ে গেছে, তাই নতুন করে অন্য কাউকে এড দেয়া যাবেনা। আমি কমেন্টে লিংকটা ওপেন করে দিচ্ছি যারা সল্ভ করতে চায় তাদের জন্য। 
+এটা খুবই ইন্টারেস্টিং একটা প্রব্লেম আর প্রত্যেকে এটা ডিফারেন্ট ভাবে সল্ভ করবে। সেরা সল্যুশন গুলো আমি এই পেজ থেকে শেয়ার করবো। এটা সল্ভ করে সেটা যে কারো জন্য একটা নিজের পারসোনাল অটোমেশন টুল হয়ে যাবে।
+
+The Open HUD Challenge: https://www.notion.so/talhachy/The-Open-HUD-Challenge-Build-a-HUD-as-a-High-Signal-Personal-News-Feed-271d2a8a336080eb9069e5b95558da39
+
+### The Open HUD Challenge : Build a HUD as a High Signal Personal News Feed 
+
+What is a HUD UI?
+
+[HUD UI Design Overview](https://claude.ai/share/c722821c-05eb-444f-86c3-dcb64540b68e)
+
+![Gemini_Generated_Image_oehw6joehw6joehw.png](attachment:3fce73f8-02e9-4c0c-8aea-0d352acb6aa9:Gemini_Generated_Image_oehw6joehw6joehw.png)
+
+**This program should accomplish the following goal:** Pull news/posts from the [following](https://www.notion.so/The-Open-HUD-Challenge-Build-a-HUD-as-a-High-Signal-Personal-News-Feed-271d2a8a336080eb9069e5b95558da39?pvs=21) feeds, rank them accroding to my current focus. Show me a auto scrolling list of news with a mix from my current interest and news that are very popular and I should pay attention to.
+
+A minimal implementation of what it’d look like (note this is not what I want): https://claude.ai/share/f3504cef-51c5-46b5-8f5f-8938507898ac
+
+Pull Content from: 
+
+- HackerNews
+- Specific Newsletter such as RundownAI, TLDR AI, AI News
+- Specific X accounts
+- Specific subreddits
+
+Challenge: System design, design decisions, backend structure, and frontend ui for the app, such as: 
+
+- Deciding auto scroll speed
+- Deciding how to rank news that are highly popular (what metrics decide popularity?)
+- Creating a design of how to show the mix of my current focus area news and other news
+- Bookmark management for the news that I decide to save
+- Pulling news from bookmarks to show periodically (deciding the frequency)
+- and more as they come along
+
+Must needs: 
+
+- Strong state management
+- Strong database management across users
+- AI pipeline control (ability to put user’s own AI api keys such as openai key for use)
+- Tech stack: React, Next.js
+
+Resources for you
+
+---
+
+What is HUD: 
+
+[ChatGPT - HUD UI overview](https://chatgpt.com/share/68c49ac4-c910-800a-a797-fe3c63d51ebd)
+
+What does a HUD for airplane looks like: https://youtu.be/BVrYAYxrBb4?si=Mt6rgJPEIbUxsoF_
+
+Also search across the internet for HUD examples and implementations
+
+**Your Deliverables:**
+
+---
+
+By September 25, 
+
+- If you’re a developer
+    
+    Build a hud ui for your use using the tech stack above, deploy it to vercel, and share it with me. Make sure to have the app fully functional.
+    
+- If you’re an AI Engineer
+    
+    Follow this guide and do as much as you can by the deadline. Share it with me with appropriate tools to showcase, you’ll figure it out. 
+    
+    ‣ 
+    
+- If you’re a designer
+    
+    Design a HUD UI for this usecase that you’ll use it yourself. Share it with me via email with appropriate format that is displayable on the broswer.
+    
+- If you’re a product person
+    
+    Write a six-pager product document on this outlining all you can think of in terms of: roadmap, feature ideas, user story, pain points, etc. Your goal is to write a document that outlines how to build the best HUD UI possible. This document should be complete enough so an engineer can go on their own and build it reading the doc without asking any questions.
+    
+- If you’re anyone else
+    
+    Build/make whatever you can think of. Use as many tools as your disposals, research, write a paper, etc. There are so many ways you can showcase your skills and going through the process of thinking how to build this product will make you a clearer thinker.
 
 
+Submissions should be sent to [rubriked@gmail.com](mailto:rubriked@gmail.com), after you submit send me a message on my page’s DM. Your submission should also include a pdf doc outlining how you built it, what resources you used, anything you think an employer should know about.
+
+Here’s an example of a HUD UI built using this project proposal. I recommend not looking at it before you build yours because it’s gonna limit your thinking. But if you really don’t understand the proposal, this is for you. You can also look at it after you’ve made your initial version. Your goal is to give yourself enough creative thinking so everyone’s project becomes a different version. The sky is the limit of what you can do with it. 
+
+---
+
+[hud-ui.vercel.app](https://hud-ui.vercel.app/)
+
+I’ll post a separate post on my page where you can ask as many questions as you want for clarifications. But I’d suggest not to wait for my response, just make up your assumption and build on that assumption.
+
+**The best submissions will get a direct interview to join the first AI Fund in Bangladesh and build Flowsurf and ship other amazing AI products with me.** 
+
+**Not everyone will be able to complete this challenge. That’s where you’ll get ahead! This is what cheat code to life looks like. Go build it!**
+
+---
