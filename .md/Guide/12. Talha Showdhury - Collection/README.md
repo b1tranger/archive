@@ -4,6 +4,8 @@
 3. [This is the perfect algorithm to be a cracked Builder/Engineer in 2025. [Free Resources]](#this-is-the-perfect-algorithm-to-be-a-cracked-builderengineer-in-2025-free-resources)
 4. [The Open HUD Challenge](#the-open-hud-challenge)
 5. [Open Source Contribution](#Open-Source-Contribution)
+6. [AI Engineer হতে চাইলে কি কি করা/জানা লাগবে](#AI-Engineer-হতে-চাইলে-কি-কি-করা-জানা-লাগবে)
+7. 
 
 ---
 # [The Brain Slump](#index)
@@ -300,3 +302,22 @@ Ready to make your mark on the open-source world? Head to the [freeCodeCamp.org 
 https://youtu.be/mklEhT_RLos
 
 ---
+
+# [AI Engineer হতে চাইলে কি কি করা/জানা লাগবে](#index)
+https://www.facebook.com/share/p/1D6jJmd2Vu/
+
+Talha Chowdhury
+ 
+September 10 at 5:59 PM
+ ·
+প্রায় ২০০+ টা জব পোস্টিং ঘেটে আমি এনালাইজ করছি AI Engineer হতে চাইলে কি কি করা/জানা লাগবে।
+আজকে সেটা ফ্রি দিয়ে দিচ্ছি সবাইকে। এর থেকে কম্প্রিহেন্সিভ আর সহজ গাইড অনলাইনে দেখিনি এখনো। বাংলায়ও রিসোর্স দেয়া আছে। 
+AI কোডিং টুলস এর কারণে এখনের থেকে বেটার সময় হবেনা AI ইঞ্জিনিয়ার এর পথ ধরার। বাংলাদেশের CSE তে যারা পড়ে আর মনে হয় জব মার্কেট Software Engineering তে অনেক Crowded, তাদের এই পাথ ফলো করতে রেকোমেন্ড করবো। 
+লিংক নিচে দিয়ে দিচ্ছি। রিকোয়েস্ট করার পর কমেন্টে জানাতে হবে, আমি পারসোনালি একেকটা রিকোয়েস্ট এক্সেপ্ট করবো। 
+শেয়ার করে আরো CS স্টুডেন্ট দের রিচ করতে হেল্প করো, কারণ কমুনিটি যত বড়, সাপোর্ট তত বেশি পাবে।
+
+### Comments
+- AI Engineer হওয়ার Comprehensive Guide রিসোর্স সহ: https://www.notion.so/talhachy/AI-ML-Engineer-17dd2a8a3360803ea09cd2a08bbb10f7?source=copy_link
+- এখন পর্যন্ত এক হাজারেরও বেশি বার পড়া হয়েছে AI Engineer হওয়ার গাইডটা।
+পেজের পারমিশন লিমিট থাকায় আর কাউকে এড করা যাবেনা আলাদা করে। তাই এখন আমি পেজটা ওপেন করে দিচ্ছি সবার জন্য। ওই আগের লিংক দিয়েই এখন যে কেউ পারমিশন ছাড়া পড়তে পারবে AI Engineering এর গাইড বিগিনার থেকে এডভান্সড লেভেল অব্ধি।
+- 
