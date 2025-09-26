@@ -268,6 +268,8 @@ Tech জগতের সব থেকে Underrated একটা স্কিল
 ### Comments
 🛡️Crash course on open source contribution from the very best: https://www.freecodecamp.org/news/become-an-open-source-master/
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ca764883-42bf-49bc-9358-aaae2797c4e8" />
+
 Become an Open Source Master
 Beau Carnes
 Beau Carnes
