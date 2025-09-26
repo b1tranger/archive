@@ -3,8 +3,8 @@
 2. ["How to Build with AI" by Andrew Ng](#how-to-build-with-ai-by-andrew-ng)
 3. [This is the perfect algorithm to be a cracked Builder/Engineer in 2025. [Free Resources]](#this-is-the-perfect-algorithm-to-be-a-cracked-builderengineer-in-2025-free-resources)
 4. [The Open HUD Challenge](#the-open-hud-challenge)
-5. [Open Source Contribution](#Open-Source-Contribution)
-6. [AI Engineer হতে চাইলে কি কি করা/জানা লাগবে](#AI-Engineer-হতে-চাইলে-কি-কি-করা-জানা-লাগবে)
+5. [Open Source Contribution](#the-open-hud-challenge)
+6. [AI Engineer হতে চাইলে কি কি করা/জানা লাগবে](#ai-engineer-%E0%A6%B9%E0%A6%A4%E0%A7%87-%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A6%B2%E0%A7%87-%E0%A6%95%E0%A6%BF-%E0%A6%95%E0%A6%BF-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE-%E0%A6%B2%E0%A6%BE%E0%A6%97%E0%A6%AC%E0%A7%87)
 7. 
 
 ---
