@@ -35,6 +35,8 @@ https://www.facebook.com/share/p/1CmvoZFreY/
 
 <img width="2280" height="1118" alt="image" src="https://github.com/user-attachments/assets/9b2dd697-4f98-4183-a929-8062c94ffbb4" />
 
+Video Link: https://www.youtube.com/watch?v=RNJCfif1dPY
+
 Talha Chowdhury
  
 September 22 at 10:43 AM
@@ -84,4 +86,37 @@ Bookmark this and READ the whole thing.
 - A big edtech change is underway but not here yet. In the next 5-10 years, we’ll be looking to how to transform the education process into an agentic ai workflow
 —
 Talha Chowdhury
+
+---
+
+# This is the perfect algorithm to be a cracked Builder/Engineer in 2025. [Free Resources]
+https://www.facebook.com/share/p/1BA246WpJP/
+
+Talha Chowdhury
+ 
+September 19 at 11:07 AM
+ ·
+This is the perfect algorithm to be a cracked Builder/Engineer in 2025. [Free Resources]
+Let me spill the secret and all the resources you need for that. 
+Step 1: Find a github repository of a project that you find interesting. Or An area that you want to build in. 
+Step 2: Use the tools in the comments to study that project throughly to understand how it is implemented in that repo
+Step 3: Copy that for your project and make sure you understand how you're implementing that
+Step 4: Repeat
+This is all you need. Reading code has been the most important aspect of software engineering always. But now it's 100x easier to both read and implement.
+
+### Comments
+- Deepwiki: Turn any Github Repo Into a Wikipedia (including Diagrams:
+https://github.com/AsyncFuncAI/deepwiki-open
+
+- Find a repository to commit as a beginner:
+https://forgoodfirstissue.github.com/
+
+- Colorful diagrams and visualizations to understand a github repo: https://githubnext.com/projects/repo-visualization/
+
+- Turn any github repo into diagram easily: https://gitdiagram.com/
+
+- Print Github Repositories as Books:
+https://gitprint.me/
+
+
 
