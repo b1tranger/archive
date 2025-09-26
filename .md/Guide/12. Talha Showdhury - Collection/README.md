@@ -462,7 +462,7 @@ Flowsurf এ আমরা একটা নিউ টাইপের ইন্ট
 
 By creating user interfaces which let us work with the representations inside machine learning models, we can give people new tools for reasoning.
 
-![Screenshot 2025-09-08 at 5.55.52 AM.png](attachment:cba76286-e621-4ff2-b91f-284722afe92d:Screenshot_2025-09-08_at_5.55.52_AM.png)
+<img width="1576" height="210" alt="image" src="https://github.com/user-attachments/assets/5226121c-e545-40f0-9f77-87cd68aad5bb" />
 
 [Using Artificial Intelligence to Augment Human Intelligence](https://distill.pub/2017/aia/)
 
