@@ -33,6 +33,8 @@ So that's it. One doc, for all your writings across the internet.
 # "How to Build with AI" by Andrew Ng
 https://www.facebook.com/share/p/1CmvoZFreY/
 
+<img width="2280" height="1118" alt="image" src="https://github.com/user-attachments/assets/9b2dd697-4f98-4183-a929-8062c94ffbb4" />
+
 Talha Chowdhury
  
 September 22 at 10:43 AM
