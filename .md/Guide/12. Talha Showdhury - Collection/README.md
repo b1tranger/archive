@@ -306,6 +306,8 @@ https://youtu.be/mklEhT_RLos
 # [AI Engineer হতে চাইলে কি কি করা/জানা লাগবে](#index)
 https://www.facebook.com/share/p/1D6jJmd2Vu/
 
+<img width="1296" height="2048" alt="image" src="https://github.com/user-attachments/assets/612c47a4-8667-4775-ba60-b1d1c77e4bf8" />
+
 Talha Chowdhury
  
 September 10 at 5:59 PM
