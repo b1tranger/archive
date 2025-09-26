@@ -152,8 +152,7 @@ The Open HUD Challenge এর জন্য প্রশ্ন আছে সে�
 
 The Open HUD Challenge: https://www.notion.so/talhachy/The-Open-HUD-Challenge-Build-a-HUD-as-a-High-Signal-Personal-News-Feed-271d2a8a336080eb9069e5b95558da39
 
-
-![1f52d](https://github.com/user-attachments/assets/9ceb23a4-0295-493f-847d-7537341fe2fa)
+<img width="36" height="36" alt="1f52d" src="https://github.com/user-attachments/assets/cadaca3f-794d-4ae1-9d7c-084cf869cac3" />
 
 ### The Open HUD Challenge : Build a HUD as a High Signal Personal News Feed 
 
