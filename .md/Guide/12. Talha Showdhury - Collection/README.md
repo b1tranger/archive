@@ -1,5 +1,7 @@
 https://www.facebook.com/share/p/19GJ9tfWst/
 
+<img width="1206" height="394" alt="image" src="https://github.com/user-attachments/assets/33fc7ac2-24d0-4041-834b-6c4d9211e590" />
+
 Talha Chowdhury
 17h
  ·
@@ -23,3 +25,5 @@ This does two thing.
 2. When AI becomes more personalized, you can feed that doc into a personal LLM to enrich its memory and give you answer to any question using your personal info.
 
 So that's it. One doc, for all your writings across the internet.
+
+---
