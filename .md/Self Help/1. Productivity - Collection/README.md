@@ -36,3 +36,10 @@ Example:
 ~
 Talha Chowdhury
 
+### Comments
+- Ankit Roy
+This is a really helpful and efficient method to brainstorm ideas and turn them into reality
+- Orka Dasgupta
+Flow state নিয়ে japanese book Ikigai এ খুব সুন্দর ভাবে উল্লেখ করা আছে
+
+---
