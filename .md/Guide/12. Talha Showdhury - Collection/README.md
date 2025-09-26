@@ -364,14 +364,14 @@ AI/ML ইঞ্জিনিয়াররা মূলত বিশাল প�
 
 - **Job 2: Scale AI -** **Applied AI Engineer, Enterprise GenAI**
     
-    ![Screenshot 2025-01-15 at 7.47.45 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/5c157156-aa72-48c1-875c-3f71b96ff59f/3e7f5f80-3fe0-4e04-850f-f8a9dbf0975b/Screenshot_2025-01-15_at_7.47.45_PM.png)
-    
+   <img width="1620" height="1388" alt="image" src="https://github.com/user-attachments/assets/743a9d24-c79d-4f41-b6df-cbb700bc31ab" />
+
     [Job Link: https://www.linkedin.com/jobs/view/4119484886/?eBP=CwEAAAGUbIkzkimFvMkJ2wyf4WsOg-Di0GrG5r1cQAIHRzgtHcygzHTFtT3Oy8sXIdl9xNgnFuSKG-BN-yK_0NOYkx3U1MQugTSbutj8ddc1WkZ7_lMGvxLhiIGJARVZrOwVTQBsuRvAtL636N9d5t-mAAI8ULIxOezLCKv2RIXWg9VJdvjGXeKAEz_qnky72dcNzpIsPh6o9sHKRD1B2f4vemZnVFP6A_xUKPvTVel1u8bqAKQKZD5CI5cWT7HGc_IxW5PXOBHuiaZ6SFXBrFFyamUs4-MjoCbnFpCFbGUFjgUei0_zOSZ0Q5TDLPcR5uPK_m-k-eZKBsM9vlj5arw2l_k_vWDSV9Nse7QuwLKq7db-LKZHZ7-mFyGtdT7FmCVR6l0jDG4kLhVzIgM7TIcPYt0wpXAlcgRahAydz32BlozU5GTz6ifXp7R3LPpx-uaNsdusCajCVWsNorb8XY6AWoFT4UQRByFp-yvfQsoHPJbjRincLqfTK1Nixev0yA4e1XbB&refId=LIQqNt4xcqck6Bi3g5TItQ%3D%3D&trackingId=NC%2BpjEnrhOzg403a6moE2A%3D%3D&trk=flagship3_search_srp_jobs]
     
 - **Job 3: Normal Computing - AI Engineer**
     
-    ![Screenshot 2025-01-15 at 7.49.19 PM.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/5c157156-aa72-48c1-875c-3f71b96ff59f/ac28e307-8865-4651-b06c-67c50d77d24d/Screenshot_2025-01-15_at_7.49.19_PM.png)
-    
+   <img width="1624" height="1398" alt="image" src="https://github.com/user-attachments/assets/bc72ed5a-3537-4710-86ca-6c36930a52f2" />
+
     [Job Link: https://www.linkedin.com/jobs/view/4094295538/?eBP=CwEAAAGUbIkzkjSZsS5PO8JmeiRi6gKWVhh6cm6KgD7v4N2Mc-1cVvbHEccQcrjRpC4azKE1i9U59vXcUaKPP39um6J9MHUkSBnjb6XpEuQlVhJ57Nk8d2Cmj5k7T-s0OrRIkoE__zoNLuNrXPqDbMBdq8DKJD2IsoBxc2CPoK_NNYfVw8yxtOZ0i7gA7lN37DYZKhVrlP5_wOuhBcm7gg1ac4sufRn_IidcIoGBK2CgvRi6ElrwmFA-IQAAKCI3VTqdOZJcD_TTOi_xEsS1kzWQIwi5tI2zQtwAL71M7KhZsU5jVkxR5RoBgeidI9x8a28ascMDvEUglgla5TZ3wpvEC9wtRdPV75szfjw4MQBn0JN4gujzFA5dVZ5hrPnN6sARvs84VvJk6nZv7FGW2gUHx8Yoz2SYj1KofslzKAddyDvtnCQk3cWseMbmhTXnMxHoaebN0QnzHgDL731XfW_FpJ_EADtEOnluBHn2YcHHuYLfFU8JXvqKPkcHph7aBgWgsfSwKsY&refId=LIQqNt4xcqck6Bi3g5TItQ%3D%3D&trackingId=tnAlLztqCFF%2B69ef2kvDnA%3D%3D&trk=flagship3_search_srp_jobs]
     
 
