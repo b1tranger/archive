@@ -5,7 +5,7 @@
 4. [The Open HUD Challenge](#the-open-hud-challenge)
 5. [Open Source Contribution](#the-open-hud-challenge)
 6. [AI Engineer হতে চাইলে কি কি করা/জানা লাগবে](#ai-engineer-%E0%A6%B9%E0%A6%A4%E0%A7%87-%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A6%B2%E0%A7%87-%E0%A6%95%E0%A6%BF-%E0%A6%95%E0%A6%BF-%E0%A6%95%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%BE-%E0%A6%B2%E0%A6%BE%E0%A6%97%E0%A6%AC%E0%A7%87)
-7. 
+7. [Using Artificial Intelligence to Augment Human Intelligence](#using-artificial-intelligence-to-augment-human-intelligence)
 
 ---
 # [The Brain Slump](#index)
@@ -442,4 +442,100 @@ https://github.com/andrewekhalel/MLQuestions
 
 ---
 
+# [Using Artificial Intelligence to Augment Human Intelligence](#index)
+https://www.facebook.com/share/p/1FXRTwxL7u/
 
+Talha Chowdhury
+ 
+September 8 at 7:09 PM
+ ·
+So the first paper is here! এই সপ্তাহে পড়ছি আমি, Google Brain আর YC Research টীমের লেখা একটা পেপার, আর নামঃ Using Artificial Intelligence to Augment Human Intelligence
+আমি এই পেপার সবথেকে ইম্পর্টেন্ট পয়েন্টগুলো গুছিয়ে একটা Notion-এ লিখে রেখেছি। কমেন্টে দিয়ে দিচ্ছি যাতে পুরো ২৫ পেজ ধরে পড়া না লাগে। তবে আমি পেপারটা স্কিম করতে বলবো প্রথমে, এরপর ইম্পর্ট্যান্ট পয়েন্টসগুলো পড়তে। 
+Flowsurf এ আমরা একটা নিউ টাইপের ইন্টারফেস তৈরি করতেছি এই Human Intelligence Augmentation এর জন্য। যেখানে Synthesis অফ all available resources is the goal। এই এরিয়াতে কারো বিল্ড করার ইচ্ছা থাকলে আর ডেভ এক্সপেরিয়েন্স/অথবা আইডিয়াস থাকেলে নক দিতে পারো, প্রচুর ইন্টারেস্টিং কাজের সুযোগ আছে।
+
+### Comments
+- List of important points and paper link: https://talhachy.notion.site/Using-Artificial-Intelligence-to-Augment-Human-Intelligence-268d2a8a336080fcbc78d27b3b43a4d8?pvs=143
+
+---
+
+### **Using Artificial Intelligence to Augment Human Intelligence**
+
+By creating user interfaces which let us work with the representations inside machine learning models, we can give people new tools for reasoning.
+
+![Screenshot 2025-09-08 at 5.55.52 AM.png](attachment:cba76286-e621-4ff2-b91f-284722afe92d:Screenshot_2025-09-08_at_5.55.52_AM.png)
+
+[Using Artificial Intelligence to Augment Human Intelligence](https://distill.pub/2017/aia/)
+
+## Core Concept
+
+- **Artificial Intelligence Augmentation (AIA)**: A new field emerging from the synthesis of AI and Intelligence Augmentation (IA) that uses AI systems to develop new methods for augmenting human intelligence
+• Shifts focus from AI replacing human cognition to AI helping humans think in fundamentally new ways
+• Creates tools that give people new representations and operations for reasoning
+
+## Key Technical Examples
+
+### Font Manipulation Tool
+
+- Uses variational autoencoders to compress font glyphs from ~10,000 dimensions to just 40 latent variables
+• Enables example-based reasoning - users can select fonts with certain properties (bold, italic, serif) to create custom manipulation tools
+• Automatically learns and applies sophisticated design heuristics like preserving enclosed negative space when bolding
+• Makes expert-level typography principles accessible to non-experts
+
+### Interactive GANs (iGANs)
+
+- Allows users to sketch rough constraints (shapes, colors) that the system transforms into realistic images
+• Works by optimizing in latent space to find points that satisfy user constraints while staying close to natural images
+• Prevents users from "falling off the manifold" of realistic images
+• Examples include shoe design and landscape generation
+
+## Fundamental Insights
+
+### Cognitive Technologies
+
+- Computers are not just problem-solving machines but meta-media for creating new cognitive technologies
+• These technologies become internalized as part of how humans think - like how we use words, algebra, or diagrams
+• Modern interfaces (Photoshop, spreadsheets) enable previously impossible thoughts
+• AI can help invent new cognitive primitives that transform human thought
+
+### Two Views of Computing
+
+- **Cognitive Outsourcing**: Traditional view where computers solve problems for us
+• **Cognitive Transformation**: View where computers change the operations and representations we use to think
+
+## Creativity and Expression
+
+### Two Modes of Creativity
+
+- **Everyday creativity**: Competent recombination of existing practices within established principles
+• **Fundamental creativity**: Developing new principles that expand the range of creative expression
+
+### Strangeness and Innovation
+
+- Breakthrough representations often appear strange at first (examples: Feynman diagrams, cubist paintings, Stravinsky's music)
+• Good interfaces should surface deep principles rather than just being "user-friendly" in a shallow sense
+• The goal is to reveal new worlds and ways of thinking, not just make things easy
+
+## Interface Design Philosophy
+
+- Interface design is fundamentally about developing the primitive operations humans think and create with
+• It's not just about making things pretty or easy-to-use
+• Has intellectual roots going back to the invention of the alphabet, cartography, and musical notation
+• Represents one of humanity's hardest and most fundamental problems
+
+## Future Vision
+
+- Proposes a virtuous cycle where AI helps develop cognitive technologies that in turn accelerate AI development
+• Not a technological singularity but a "Singularity in humanity's range of thought"
+• Success measured not by beating benchmarks but by enabling humans to think and create in new ways
+• Calls for a new research community with different standards and venues
+
+## Current Limitations and Challenges
+
+- Current generative models have artifacts and quality issues
+• Models often implicitly learn principles but don't explicitly surface them
+• Need for models that can automatically identify and communicate important learned principles
+• Research in this area lacks clear metrics, publication venues, and community standards
+
+This paper essentially argues for a paradigm shift in how we think about AI - from replacing human intelligence to fundamentally augmenting and transforming it through new tools and representations.
+
+---
