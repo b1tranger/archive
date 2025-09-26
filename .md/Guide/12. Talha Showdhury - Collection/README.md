@@ -138,13 +138,16 @@ The Open HUD Challenge এর জন্য প্রশ্ন আছে সে�
 
 The Open HUD Challenge: https://www.notion.so/talhachy/The-Open-HUD-Challenge-Build-a-HUD-as-a-High-Signal-Personal-News-Feed-271d2a8a336080eb9069e5b95558da39
 
+
+![1f52d](https://github.com/user-attachments/assets/9ceb23a4-0295-493f-847d-7537341fe2fa)
+
 ### The Open HUD Challenge : Build a HUD as a High Signal Personal News Feed 
 
 What is a HUD UI?
 
 [HUD UI Design Overview](https://claude.ai/share/c722821c-05eb-444f-86c3-dcb64540b68e)
 
-![Gemini_Generated_Image_oehw6joehw6joehw.png](attachment:3fce73f8-02e9-4c0c-8aea-0d352acb6aa9:Gemini_Generated_Image_oehw6joehw6joehw.png)
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/f6b2ecfb-85fa-4ca8-a8be-419fa5b298ec" />
 
 **This program should accomplish the following goal:** Pull news/posts from the [following](https://www.notion.so/The-Open-HUD-Challenge-Build-a-HUD-as-a-High-Signal-Personal-News-Feed-271d2a8a336080eb9069e5b95558da39?pvs=21) feeds, rank them accroding to my current focus. Show me a auto scrolling list of news with a mix from my current interest and news that are very popular and I should pay attention to.
 
