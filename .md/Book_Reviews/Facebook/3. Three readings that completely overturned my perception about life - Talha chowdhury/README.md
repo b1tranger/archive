@@ -37,3 +37,20 @@ Here’s another:
 Just take three days out of your life and read these three readings in your 20s and 30s. What you’ll learn will surprise you and you’ll thank yourself looking back 20 years later. 
 
 All these are free to read online and I'm going to link them in the comments.
+
+
+---
+
+## comments
+
+Talha Chowdhury
+1. How to live 24 hours a day: https://www.gutenberg.org/cache/epub/2274/pg2274-images.html
+2. First Principles Thinking by FS Blog: https://fs.blog/first-principles/
+3. What to do with your life by Julian Shapiro: https://www.julian.com/blog/life-planning
+
+Andrew Roberts
+Musk is not a great thinker. Read Chomsky, Naomi Klein, Arundhati Roy, Rebecca Solnit
+
+
+
+
