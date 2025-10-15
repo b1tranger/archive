@@ -1,11 +1,9 @@
 https://www.facebook.com/share/p/1BNarDtoYF/
 
+<img width="832" height="1248" alt="image" src="https://github.com/user-attachments/assets/922687e2-f18a-4806-bdd7-311639950e17" />
 
 Dictoms
 October 13 at 11:57 PM
-
-
- ·
 
 
 
