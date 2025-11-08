@@ -2,6 +2,7 @@
 https://www.facebook.com/share/p/1MCAHaRuyF/
 
 
+<img width="1500" height="1013" alt="image" src="https://github.com/user-attachments/assets/c8ebfb34-2ad6-4f91-b64d-f47bc519e2af" />
 
 
 # Statement of Purpose
