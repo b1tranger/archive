@@ -1,5 +1,6 @@
 https://www.facebook.com/share/p/1D9myxNHg3/
 
+<img width="2048" height="1101" alt="image" src="https://github.com/user-attachments/assets/13230d12-e310-4b58-89ac-f9c5f0373bf2" />
 
 Al-amin Sheikh
 December 26, 2025 at 3:32 PM
